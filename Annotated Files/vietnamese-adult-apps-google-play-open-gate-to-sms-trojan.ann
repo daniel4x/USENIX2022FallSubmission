@@ -1,0 +1,66 @@
+T1	Report 2162 2225	Vietnamese ‘Adult’ Apps on Google Play Open Gate to SMS Trojans
+T2	Person 2246 2262	Daisuke Nakajima
+T3	Time 2266 2278	Jan 31, 2014
+T4	OperatingSystem 2359 2366	Android
+T5	Application 2557 2568	Google Play
+T6	OperatingSystem 2599 2606	Android
+T7	Application 2668 2679	Google Play
+T8	Organization 2682 2688	McAfee
+T9	HostingMalware 2702 2713	Google Play
+T10	Country 2741 2751	Vietnamese
+T11	Application 2807 2817	RealPlayer
+T12	AttackPattern_SmallDescription 2862 2934	persuades careless users to install and activate it as a DeviceAdmin app
+T13	Application 2966 2977	Google Play
+T14	AttackPattern_SmallDescription 3019 3050	look like adult-content viewers
+T15	AttackPattern_SmallDescription 3077 3106	request excessive permissions
+T16	AttackPattern_SmallDescription 3182 3284	show a dialog offering to download the latest RealPlayer app for viewing adult movies in HD resolution
+T17	Application 3228 3238	RealPlayer
+T18	Filename 3308 3322	RealPlayer.apk
+T19	Application 3421 3431	RealPlayer
+T20	AttackPattern_SmallDescription 3719 3777	requests excessive permissions, including SMS-related ones
+T21	AttackPattern_SmallDescription 3782 3832	requests users to activate it as a DeviceAdmin app
+T22	AttackPattern_SmallDescription 3846 3903	persuade users by saying “Your boss told you to do this,”
+T23	AttackPattern_SmallDescription 3967 4004	removes its app icon from home screen
+T24	AttackPattern_SmallDescription 4078 4117	activate the fake app as a DeviceAdmin.
+T25	Application 4164 4174	RealPlayer
+T26	AttackPattern_SmallDescription 4236 4331	registers several broadcast receivers triggered by the completion of the device’s boot sequence
+T27	AttackPattern_SmallDescription 4333 4374	adds or removes packages and SMS receipts
+T28	AttackPattern_SmallDescription 4380 4459	invokes background services that communicates with its control server via HTTP,
+T29	CommandAndControl 4435 4449	control server
+T30	Protocol 4454 4458	HTTP
+T31	OperatingSystem 4494 4501	Android
+T32	AttackPattern_SmallDescription 4546 4602	Sends SMS messages to a phone number with a text message
+T33	AttackPattern_SmallDescription 4652 4702	Updates the app by downloading the new app package
+T34	AttackPattern_SmallDescription 4761 4829	Discards SMS message received from a predefined set of phone numbers
+T35	AttackPattern_SmallDescription 4832 4895	Disables and enables these activities, based on server requests
+T36	Application 5221 5232	Google Play
+T37	AttackPattern_SmallDescription 5510 5528	social engineering
+T38	HostingMalware 5598 5609	Google Play
+T39	VirusScanner 5612 5634	McAfee Mobile Security
+T40	Malware 5667 5684	Android/PhimSms.A
+T41	Malware 5689 5713	Android/PhimSmsDropper.A
+R1	has Arg1:T1 Arg2:T2
+R2	has Arg1:T1 Arg2:T3
+R3	indicatedBy Arg1:T40 Arg2:T18
+R4	indicatedBy Arg1:T40 Arg2:T30
+R5	uses Arg1:T40 Arg2:T9
+R6	targets Arg1:T40 Arg2:T10
+R7	uses Arg1:T40 Arg2:T12
+R8	uses Arg1:T40 Arg2:T14
+R9	uses Arg1:T40 Arg2:T15
+R10	uses Arg1:T40 Arg2:T16
+R11	uses Arg1:T40 Arg2:T20
+R12	uses Arg1:T40 Arg2:T21
+R13	uses Arg1:T40 Arg2:T22
+R14	uses Arg1:T40 Arg2:T23
+R15	uses Arg1:T40 Arg2:T24
+R16	uses Arg1:T40 Arg2:T26
+R17	uses Arg1:T40 Arg2:T27
+R18	uses Arg1:T40 Arg2:T28
+R19	uses Arg1:T40 Arg2:T29
+R20	uses Arg1:T40 Arg2:T32
+R21	uses Arg1:T40 Arg2:T33
+R22	uses Arg1:T40 Arg2:T34
+R23	uses Arg1:T40 Arg2:T35
+R24	uses Arg1:T40 Arg2:T37
+R25	uses Arg1:T40 Arg2:T38

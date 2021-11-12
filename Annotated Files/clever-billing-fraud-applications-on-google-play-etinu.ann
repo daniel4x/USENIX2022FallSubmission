@@ -1,0 +1,143 @@
+T1	Report 783 838	Clever Billing Fraud Applications on Google Play: Etinu
+T2	HostingMalware 820 831	Google Play
+T3	Person 859 872	Sang Ryol Ryu
+T4	Person 877 888	Chanung Pak
+T5	Time 892 904	Apr 19, 2021
+T6	HostingMalware 961 972	Google Play
+T7	OperatingSystem 990 997	Android
+T8	Region 1007 1021	Southwest Asia
+T9	Region 1030 1047	Arabian Peninsula
+T10	Organization 1119 1141	McAfee Mobile Research
+T11	Organization 1164 1170	Google
+T12	HostingMalware 1220 1231	Google Play
+T13	AttackPattern_SmallDescription 1233 1324	Posing as photo editors, wallpapers, puzzles, keyboard skins, and other camera-related apps
+T14	AttackPattern_SmallDescription 1372 1441	hijack SMS message notifications and then make unauthorized purchases
+T15	AttackPattern_SmallDescription 1573 1690	submitting a clean version of the app for review and then introducing the malicious code via updates to the app later
+T16	HostingMalware 1724 1735	Google Play
+T17	VirusScanner 1737 1759	McAfee Mobile Security
+T18	Malware 1783 1796	Android/Etinu
+T19	Organization 1842 1873	The McAfee Mobile Research team
+T20	Organization 1956 1962	Google
+T21	HostingMalware 2015 2026	Google Play
+T22	AttackPattern_SmallDescription 2107 2146	takes advantage of dynamic code loading
+T23	AttackPattern_SmallDescription 2148 2205	Encrypted payloads of malware appear in the assets folder
+T24	Filename 2252 2261	cache.bin
+T25	Filename 2265 2277	settings.bin
+T26	Filename 2281 2291	data.droid
+T27	AttackPattern_SmallDescription 2501 2642	hidden malicious code in the main .apk opens “1.png” file in the assets folder, decrypts it to “loader.dex,” and then loads the dropped .dex.
+T28	Filename 2547 2552	1.png
+T29	Filename 2597 2607	loader.dex
+T30	AttackPattern_SmallDescription 2647 2710	“1.png” is encrypted using RC4 with the package name as the key
+T31	Filename 2648 2653	1.png
+T32	AttackPattern_SmallDescription 2716 2772	first payload creates HTTP POST request to the C2 server
+T33	Protocol 2738 2742	HTTP
+T34	CommandAndControl 2763 2772	C2 server
+T35	AttackPattern_SmallDescription 2803 2830	uses key management servers
+T36	AttackPattern_SmallDescription 2835 2911	requests keys from the servers for the AES encrypted second payload, “2.png”
+T37	Filename 2905 2910	2.png
+T38	AttackPattern_SmallDescription 2921 2968	server returns the key as the “s” value of JSON
+T39	AttackPattern_SmallDescription 2989 3013	has self-update function
+T40	AttackPattern_SmallDescription 3020 3102	the server responds “URL” value, the content in the URL is used instead of “2.png”
+T41	Filename 3096 3101	2.png
+T42	AttackPattern_SmallDescription 3113 3182	servers do not always respond to the request or return the secret key
+T43	AttackPattern_SmallDescription 3312 3376	hijacks the Notification Listener to steal incoming SMS messages
+T44	OperatingSystem 3382 3389	Android
+T45	Malware 3390 3403	Joker malware
+T46	AttackPattern_SmallDescription 3532 3661	When the notification has arisen from the default SMS package, the message is finally sent out using WebView JavaScript Interface
+T47	Organization 4095 4122	McAfee Mobile Research team
+T48	VirusScanner 4268 4290	McAfee Mobile Security
+T49	Hash 4725 4789	08C4F705D5A7C9DC7C05EDEE3FCAD12F345A6EE6832D54B758E57394292BA651
+T50	Filename 4790 4813	com.studio.keypaper2021
+T51	Hash 4816 4880	CC2DEFEF5A14F9B4B9F27CC9F5BBB0D2FC8A729A2F4EBA20010E81A362D5560C
+T52	Filename 4881 4902	com.pip.editor.camera
+T53	Hash 4905 4969	007587C4A84D18592BF4EF7AD828D5AAA7D50CADBBF8B0892590DB48CCA7487E
+T54	Filename 4970 4998	org.my.favorites.up.keypaper
+T55	Hash 5001 5065	08FA33BC138FE4835C15E45D1C1D5A81094E156EEF28D02EA8910D5F8E44D4B8
+T56	Filename 5066 5091	com.super.color.hairdryer
+T57	Hash 5094 5158	9E688A36F02DD1B1A9AE4A5C94C1335B14D1B0B1C8901EC8C986B4390E95E760
+T58	Filename 5159 5186	com.ce1ab3.app.photo.editor
+T59	Hash 5189 5253	018B705E8577F065AC6F0EDE5A8A1622820B6AEAC77D0284852CEAECF8D8460C
+T60	Filename 5254 5272	com.hit.camera.pip
+T61	Hash 5275 5339	0E2ACCFA47B782B062CC324704C1F999796F5045D9753423CF7238FE4CABBFA8
+T62	Filename 5340 5371	com.daynight.keyboard.wallpaper
+T63	Hash 5374 5438	50D498755486D3739BE5D2292A51C7C3D0ADA6D1A37C89B669A601A324794B06
+T64	Filename 5439 5463	com.super.star.ringtones
+T65	DomainName 5474 5503	d37i64jgpubcy4.cloudfront.net
+T66	DomainName 5505 5534	d1ag96m0hzoks5.cloudfront.net
+T67	DomainName 5536 5564	dospxvsfnk8s8.cloudfront.net
+T68	DomainName 5566 5594	d45wejayb5ly8.cloudfront.net
+T69	DomainName 5596 5625	d3u41fvcv6mjph.cloudfront.net
+T70	DomainName 5627 5656	d3puvb2n8wcn2r.cloudfront.net
+T71	DomainName 5658 5686	d8fkjd2z9mouq.cloudfront.net
+T72	DomainName 5688 5717	d22g8hm4svq46j.cloudfront.net
+T73	DomainName 5719 5748	d3i3wvt6f8lwyr.cloudfront.net
+T74	DomainName 5750 5779	d1w5drh895wnkz.cloudfront.net
+R1	uses Arg1:T18 Arg2:T6	
+R2	targets Arg1:T18 Arg2:T7	
+R3	targets Arg1:T18 Arg2:T8	
+R4	targets Arg1:T18 Arg2:T9	
+R5	uses Arg1:T18 Arg2:T12	
+R6	uses Arg1:T18 Arg2:T13	
+R7	uses Arg1:T18 Arg2:T14	
+R8	uses Arg1:T18 Arg2:T15	
+R9	uses Arg1:T18 Arg2:T16	
+R10	uses Arg1:T18 Arg2:T22	
+R11	uses Arg1:T18 Arg2:T23	
+R12	indicatedBy Arg1:T18 Arg2:T24	
+R13	indicatedBy Arg1:T18 Arg2:T25	
+R14	indicatedBy Arg1:T18 Arg2:T26	
+R15	uses Arg1:T18 Arg2:T27	
+R16	indicatedBy Arg1:T18 Arg2:T28	
+R17	indicatedBy Arg1:T18 Arg2:T29	
+R18	uses Arg1:T18 Arg2:T30	
+R19	indicatedBy Arg1:T18 Arg2:T31	
+R20	uses Arg1:T18 Arg2:T32	
+R21	indicatedBy Arg1:T18 Arg2:T33	
+R22	communicatesWith Arg1:T18 Arg2:T34	
+R23	uses Arg1:T18 Arg2:T35	
+R24	uses Arg1:T18 Arg2:T36	
+R25	indicatedBy Arg1:T18 Arg2:T37	
+R26	uses Arg1:T18 Arg2:T38	
+R27	uses Arg1:T18 Arg2:T39	
+R28	uses Arg1:T18 Arg2:T40	
+R29	indicatedBy Arg1:T18 Arg2:T41	
+R30	uses Arg1:T18 Arg2:T42	
+R31	uses Arg1:T18 Arg2:T43	
+R32	targets Arg1:T18 Arg2:T44	
+R33	uses Arg1:T18 Arg2:T46	
+R34	indicatedBy Arg1:T18 Arg2:T49	
+R35	indicatedBy Arg1:T18 Arg2:T50	
+R36	indicatedBy Arg1:T18 Arg2:T51	
+R37	indicatedBy Arg1:T18 Arg2:T52	
+R38	indicatedBy Arg1:T18 Arg2:T53	
+R39	indicatedBy Arg1:T18 Arg2:T54	
+R40	indicatedBy Arg1:T18 Arg2:T55	
+R41	indicatedBy Arg1:T18 Arg2:T56	
+R42	indicatedBy Arg1:T18 Arg2:T57	
+R43	indicatedBy Arg1:T18 Arg2:T58	
+R44	indicatedBy Arg1:T18 Arg2:T59	
+R45	indicatedBy Arg1:T18 Arg2:T60	
+R46	indicatedBy Arg1:T18 Arg2:T61	
+R47	indicatedBy Arg1:T18 Arg2:T62	
+R48	indicatedBy Arg1:T18 Arg2:T63	
+R49	indicatedBy Arg1:T18 Arg2:T64	
+R50	indicatedBy Arg1:T18 Arg2:T65	
+R51	indicatedBy Arg1:T18 Arg2:T66	
+R52	indicatedBy Arg1:T18 Arg2:T67	
+R53	indicatedBy Arg1:T18 Arg2:T68	
+R54	indicatedBy Arg1:T18 Arg2:T69	
+R55	indicatedBy Arg1:T18 Arg2:T70	
+R56	indicatedBy Arg1:T18 Arg2:T71	
+R57	indicatedBy Arg1:T18 Arg2:T72	
+R58	indicatedBy Arg1:T18 Arg2:T73	
+R59	indicatedBy Arg1:T18 Arg2:T74	
+R60	uses Arg1:T45 Arg2:T43	
+R61	targets Arg1:T45 Arg2:T44	
+R62	has Arg1:T50 Arg2:T49	
+R63	has Arg1:T52 Arg2:T51	
+R64	has Arg1:T54 Arg2:T53	
+R65	has Arg1:T56 Arg2:T55	
+R66	has Arg1:T58 Arg2:T57	
+R67	has Arg1:T60 Arg2:T59	
+R68	has Arg1:T62 Arg2:T61	
+R69	has Arg1:T64 Arg2:T63	

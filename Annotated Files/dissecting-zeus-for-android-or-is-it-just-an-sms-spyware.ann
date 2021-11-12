@@ -1,0 +1,110 @@
+T1	Report 785 841	Dissecting Zeus for Android (or Is It Just SMS Spyware?)
+T2	Person 862 877	Carlos Castillo
+T3	Time 881 893	Jul 11, 2011
+T4	MalwareFamily 896 900	Zeus
+T5	MalwareFamily 916 920	ZBot
+T6	AttackPattern_SmallDescription 1007 1079	steal banking credentials, allowing attackers to commit electronic fraud
+T7	Time 1087 1091	2010
+T8	MalwareFamily 1093 1097	Zeus
+T9	Hardware 1115 1133	personal computers
+T10	Time 1439 1456	September of 2010
+T11	MalwareFamily 1474 1478	Zeus
+T12	OperatingSystem 1527 1535	(Symbian
+T13	OperatingSystem 1537 1547	Blackberry
+T14	OperatingSystem 1553 1567	Windows Mobile
+T15	AttackPattern_SmallDescription 1578 1730	intercept SMS’s sent to the user by the bank and forward the captured mTANs to a remote server to defeat the SMS-based banking two-factor authentication
+T16	MalwareFamily 1805 1809	Zeus
+T17	OperatingSystem 1820 1827	Android
+T18	Person 1840 1855	Axelle Apvrille
+T19	Organization 1859 1867	Fortinet
+T20	Organization 1917 1925	F-Secure
+T21	Organization 1927 1933	s21sec
+T22	Organization 1939 1948	Kaspersky
+T23	MalwareFamily 1963 1967	Zeus
+T24	Malware 2053 2058	Zitmo
+T25	OperatingSystem 2063 2070	Android
+T26	OperatingSystem 2136 2143	Android
+T27	HostingMalware 2152 2162	web server
+T28	MalwareFamily 2194 2198	Zbot
+T29	MalwareFamily 2323 2327	Zeus
+T30	AttackPattern_SmallDescription 2392 2437	impersonate the security application, Rapport
+T31	Application 2430 2437	Rapport
+T32	AttackPattern_SmallDescription 2533 2587	icon is very similar to the official logo of Trusteer:
+T33	Organization 2578 2586	Trusteer
+T34	OperatingSystem 2631 2638	Android
+T35	AttackPattern_SmallDescription 2744 2807	the permissions are RECEIVE_SMS, INTERNET, and READ_PHONE_STATE
+T36	Indicator 2764 2775	RECEIVE_SMS
+T37	Indicator 2777 2785	INTERNET
+T38	Indicator 2791 2807	READ_PHONE_STATE
+T39	AttackPattern_SmallDescription 2874 2994	running a phishing attack while posing as a security application that “must receive” an SMS second-factor authentication
+T40	AttackPattern_SmallDescription 3066 3181	the application is composed of an Activity (that is going to be executed once the user double-clicks the fake icon)
+T41	AttackPattern_SmallDescription 3183 3256	a service (which will run in the background without the user’s knowledge)
+T42	AttackPattern_SmallDescription 3262 3340	a class named “SmsReceiver,” which execute every time the user receives an SMS
+T43	AttackPattern_SmallDescription 3364 3633	display a fake user interface acting as the security application Trusteer Rapport showing the user an “activation key” that should be used on the bank website, but in fact the number displayed is the phone’s International Mobile Equipment Identity separated by a hyphen
+T44	AttackPattern_SmallDescription 3772 3839	code inside SmsReciver will run every time the user receives an SMS
+T45	AttackPattern_SmallDescription 3851 4124	passes the captured SMS to the service “MainService,” which starts a thread to collect the originating address (sender) and the message body of each SMS and stores that information in a specific structure attribute/value pair that is commonly used to transfer data via HTTP
+T46	Protocol 4120 4124	HTTP
+T47	AttackPattern_SmallDescription 4190 4338	IMEI of the device will be collected as well and all the information will be sent to a remote server using a JSON object using a POST request method
+T48	Malware 4390 4395	Zitmo
+T49	OperatingSystem 4408 4415	Android
+T50	AttackPattern_SmallDescription 4450 4478	probably only an SMS spyware
+T51	AttackPattern_SmallDescription 4627 4788	only intercept (and block) all the incoming SMS messages and it will forward them to a remote server that is present in clear text in the code of the application
+T52	AttackPattern_SmallDescription 4811 4947	does not encrypt communications with the remote server and it does not implement obfuscation in the code to make analysis more difficult
+T53	AttackPattern_SmallDescription 4959 5112	no evidence that the intercepted messages are being filtered to target a specific bank or to search for a specific authentication code inside the message
+T54	AttackPattern_SmallDescription 5123 5175	all the messages are forwarded to the remote server,
+T55	AttackPattern_SmallDescription 5275 5375	need to correlate, in real time, the username and password of the user with the mTAN sent in the SMS
+T56	Malware 5385 5390	Zitmo
+T57	AttackPattern_SmallDescription 5414 5508	implement control commands such as SET ADMIN to change the device that is controlling the bots
+T58	AttackPattern_SmallDescription 5526 5587	have a mechanism to change the URL that is collecting the SMS
+T59	MalwareFamily 5699 5703	Zeus
+T60	Malware 5802 5807	Zitmo
+T61	AttackPattern_SmallDescription 5838 5870	acts as a fake security software
+T62	AttackPattern_SmallDescription 5895 5913	social engineering
+T63	OperatingSystem 6012 6019	Android
+T64	Organization 6104 6110	McAfee
+T65	Malware 6162 6176	Android/SpySMS
+R1	uses Arg1:T4 Arg2:T6	
+R2	has Arg1:T8 Arg2:T7	
+R3	targets Arg1:T8 Arg2:T9	
+R4	has Arg1:T11 Arg2:T10	
+R5	targets Arg1:T11 Arg2:T12	
+R6	targets Arg1:T11 Arg2:T13	
+R7	targets Arg1:T11 Arg2:T14	
+R8	uses Arg1:T11 Arg2:T15	
+R9	targets Arg1:T16 Arg2:T17	
+R10	belongsTo Arg1:T18 Arg2:T19	
+R11	variantOf Arg1:T24 Arg2:T23	
+R12	targets Arg1:T24 Arg2:T25	
+R13	targets Arg1:T28 Arg2:T26	
+R14	uses Arg1:T28 Arg2:T27	
+R15	indicatedBy Arg1:T36 Arg2:T65	
+R16	targets Arg1:T48 Arg2:T49	
+R17	uses Arg1:T56 Arg2:T57	
+R18	uses Arg1:T56 Arg2:T58	
+R19	variantOf Arg1:T60 Arg2:T59	
+R20	uses Arg1:T65 Arg2:T30	
+R21	uses Arg1:T65 Arg2:T31	
+R22	uses Arg1:T65 Arg2:T32	
+R23	uses Arg1:T65 Arg2:T33	
+R24	targets Arg1:T65 Arg2:T34	
+R25	uses Arg1:T65 Arg2:T35	
+R26	uses Arg1:T65 Arg2:T39	
+R27	uses Arg1:T65 Arg2:T40	
+R28	uses Arg1:T65 Arg2:T41	
+R29	uses Arg1:T65 Arg2:T42	
+R30	uses Arg1:T65 Arg2:T43	
+R31	uses Arg1:T65 Arg2:T44	
+R32	uses Arg1:T65 Arg2:T45	
+R33	indicatedBy Arg1:T65 Arg2:T46	
+R34	uses Arg1:T65 Arg2:T47	
+R35	uses Arg1:T65 Arg2:T50	
+R36	uses Arg1:T65 Arg2:T51	
+R37	uses Arg1:T65 Arg2:T52	
+R38	uses Arg1:T65 Arg2:T53	
+R39	uses Arg1:T65 Arg2:T54	
+R40	uses Arg1:T65 Arg2:T55	
+R41	uses Arg1:T65 Arg2:T61	
+R42	uses Arg1:T65 Arg2:T62	
+R43	targets Arg1:T65 Arg2:T63	
+*	hasAlias T4 T5
+*	hasAlias T28 T29

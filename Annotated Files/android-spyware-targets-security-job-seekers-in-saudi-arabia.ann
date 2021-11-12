@@ -1,0 +1,49 @@
+T1	Report 793 853	Android Spyware Targets Security Job Seekers in Saudi Arabia
+T2	Person 874 890	Yukihiro Okutomi
+T3	Time 894 906	May 31, 2016
+T4	Region 913 924	Middle East
+T5	Organization 1062 1084	McAfee Mobile Research
+T6	Country 1340 1352	Saudi Arabia
+T7	AttackPattern_SmallDescription 1374 1496	a campaign that is working in tandem with a job site that offers work for security personal in government or military jobs
+T8	Malware 1513 1528	Android/ChatSpy
+T9	AttackPattern_SmallDescription 1534 1575	distributed as a private chat application
+T10	AttackPattern_SmallDescription 1580 1744	steals user contacts, SMS messages, and voice calls from infected devices and forwards them to the attacker’s server, which is in the same location as the job site.
+T11	Organization 2014 2046	Computer Emergency Response Team
+T12	Country 2050 2062	Saudi Arabia
+T13	AttackPattern_SmallDescription 2162 2256	shows only a screen with the network carrier and user’s phone number information, nothing more
+T14	AttackPattern_SmallDescription 2290 2463	runs in the background and gathers device information, contacts, browser history, SMS messages, and call logs on the infected device, and posts them to the attacker’s server
+T15	AttackPattern_SmallDescription 2487 2674	sends the message “New victim arrived” to notify the attacker of the infection and hides its application icon from the menu to prevent uninstallation and keep its spying activities secret
+T16	AttackPattern_SmallDescription 2690 2811	keeps monitoring incoming SMS messages and takes screenshots, and records incoming/outgoing voice calls in the background
+T17	AttackPattern_SmallDescription 2818 2884	user-sensitive information is also posted to the attacker’s server
+T18	AttackPattern_SmallDescription 2890 2962	server runs a MySQL database and collects the data from infected devices
+T19	AttackPattern_SmallDescription 3092 3127	application code is of poor quality
+T20	AttackPattern_SmallDescription 3141 3244	has “spy” in the package name, and the hardcoded SMS message to the attacker has “victim” in plain text
+T21	AttackPattern_SmallDescription 3258 3372	uses an open-source “ call-recorder-for-android ,” found on GitHub, to implement the voice-call recording function
+T22	Application 3280 3305	call-recorder-for-android
+T23	Organization 3318 3324	GitHub
+T24	Organization 3472 3478	McAfee
+T25	VirusScanner 3588 3610	McAfee Mobile Security
+T26	Malware 3634 3649	Android/ChatSpy
+T27	VirusScanner 3761 3783	McAfee Mobile Security
+T28	Hash 3867 3931	7cbf61fbb31c26530cafb46282f5c90bc10fe5c724442b8d1a0b87a8125204cb
+T29	Hash 3933 3997	4aef8d9a3c4cc1e66a6f2c6355ecc38d87d9c81bb2368f4ca07b2a02d2e4923b
+T30	URL 4016 4054	hxxp://ksa-sef[dot]com/Hack%20Mobaile/
+R1	targets Arg1:T8 Arg2:T4	
+R2	targets Arg1:T8 Arg2:T6	
+R3	uses Arg1:T8 Arg2:T7	
+R4	uses Arg1:T8 Arg2:T9	
+R5	uses Arg1:T8 Arg2:T10	
+R6	targets Arg1:T8 Arg2:T12	
+R7	uses Arg1:T8 Arg2:T13	
+R8	uses Arg1:T8 Arg2:T14	
+R9	uses Arg1:T8 Arg2:T15	
+R10	uses Arg1:T8 Arg2:T16	
+R11	uses Arg1:T8 Arg2:T17	
+R12	uses Arg1:T8 Arg2:T18	
+R13	uses Arg1:T8 Arg2:T19	
+R14	uses Arg1:T8 Arg2:T20	
+R15	uses Arg1:T8 Arg2:T21	
+R16	uses Arg1:T8 Arg2:T22	
+R17	indicatedBy Arg1:T26 Arg2:T28	
+R18	indicatedBy Arg1:T26 Arg2:T29	
+R19	indicatedBy Arg1:T26 Arg2:T30	

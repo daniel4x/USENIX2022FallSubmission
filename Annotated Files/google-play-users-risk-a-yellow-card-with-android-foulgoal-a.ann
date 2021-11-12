@@ -1,0 +1,78 @@
+T1	Report 793 853	Google Play Users Risk a Yellow Card With Android/FoulGoal.A
+T2	Person 874 884	Raj Samani
+T3	Time 888 900	Jul 12, 2018
+T4	Person 936 947	Irfan Asrar
+T5	Application 1178 1189	Google Play
+T6	AttackPattern_SmallDescription 1263 1281	social engineering
+T7	AttackPattern_SmallDescription 1301 1316;1328 1376	phishing emails taken advantage of disasters and sporting events
+T8	Application 1396 1406	Golden Cup
+T9	AttackPattern_SmallDescription 1434 1450	installs spyware
+T10	Application 1495 1506	Google Play
+T11	AttackPattern_SmallDescription 1512 1613	“offered” the opportunity to stream games and search for records from the current and past World Cups
+T12	VirusScanner 1615 1637	McAfee Mobile Security
+T13	Malware 1664 1682	Android/FoulGoal.A
+T14	Organization 1684 1690	Google
+T15	Application 1735 1746	Google Play
+T16	Application 1755 1765	Golden Cup
+T17	Infrastructure 1916 1954	web service without malicious activity
+T18	AttackPattern_SmallDescription 2025 2064	transfers information to another server
+T19	Application 2084 2094	Golden Cup
+T20	AttackPattern_SmallDescription 2095 2168;2171 2183;2185 2203;2205 2246;2248 2283;2285 2294;2296 2311;2313 2323	captures a considerable amount of encrypted data from the victim’s device Phone number Installed packages Device model, manufacturer, serial number Available internal storage capacity Device ID Android version IMEI, IMSI
+T21	AttackPattern_LargeDescription 2354 2448;2458 2545	first stage of a greater infection due to its capability to load dex files from remote sources connects to its control server and tries to download, unzip, and decrypt a second stage
+T22	AttackPattern_SmallDescription 2400 2448	capability to load dex files from remote sources
+T23	Infrastructure 2474 2488	control server
+T24	AttackPattern_SmallDescription 2502 2545	download, unzip, and decrypt a second stage
+T25	Malware 2548 2566	Android/FoulGoal.A
+T26	AttackPattern_SmallDescription 2567 2603;2608 2682	detects when the screen is on or off records this in its internal file scrn.txt, with the strings “on” or “off”
+T27	Filename 2642 2650	scrn.txt
+T28	Protocol 2739 2774	Message Queuing Telemetry Transport
+T29	Infrastructure 2847 2863	malicious server
+T30	AttackPattern_SmallDescription 2914 2984	User data is encrypted with AES before it is sent to the control serve
+T31	Protocol 2942 2945	AES
+T32	Indicator 2987 2994	Cryptor
+T33	Indicator 3059 3067	doCrypto
+T34	Indicator 3260 3272	SecureRandom
+T35	Indicator 3355 3361	addKey
+T36	AttackPattern_SmallDescription 3512 3655	uses this AES encryption technique for any information to be uploaded to escape the detection by Google Bouncer and network inspection products
+T37	Protocol 3522 3525	AES
+T38	VirusScanner 3609 3623	Google Bouncer
+T39	Time 3758 3767	June 8‒12
+T40	Filename 4232 4239	out.dex
+T41	AttackPattern_SmallDescription 4292 4359	steal SMS messages, contacts, multimedia files, and device location
+T42	Application 4816 4827	Google Play
+T43	Application 4889 4900	Google Play
+T44	Region 5159 5171	Middle East,
+T45	VirusScanner 5317 5339	McAfee Mobile Security
+T46	Malware 5413 5431	Android/FoulGoal.A
+R1	has Arg1:T1 Arg2:T2	
+R2	has Arg1:T1 Arg2:T3	
+R3	has Arg1:T1 Arg2:T4	
+R4	uses Arg1:T13 Arg2:T6	
+R5	uses Arg1:T13 Arg2:T7	
+R6	uses Arg1:T13 Arg2:T7	
+R7	uses Arg1:T13 Arg2:T8	
+R8	uses Arg1:T13 Arg2:T9	
+R9	uses Arg1:T13 Arg2:T11	
+R10	uses Arg1:T13 Arg2:T16	
+R11	uses Arg1:T13 Arg2:T18	
+R12	uses Arg1:T13 Arg2:T19	
+R13	uses Arg1:T13 Arg2:T20	
+R14	communicatesWith Arg1:T16 Arg2:T17	
+R15	has Arg1:T21 Arg2:T22	
+R16	has Arg1:T21 Arg2:T24	
+R17	has Arg1:T25 Arg2:T21	
+R18	communicatesWith Arg1:T25 Arg2:T23	
+R19	has Arg1:T25 Arg2:T26	
+R20	indicatedBy Arg1:T25 Arg2:T27	
+R21	indicatedBy Arg1:T25 Arg2:T28	
+R22	communicatesWith Arg1:T25 Arg2:T29	
+R23	has Arg1:T25 Arg2:T30	
+R24	indicatedBy Arg1:T25 Arg2:T32	
+R25	indicatedBy Arg1:T25 Arg2:T33	
+R26	indicatedBy Arg1:T25 Arg2:T34	
+R27	indicatedBy Arg1:T25 Arg2:T35	
+R28	has Arg1:T25 Arg2:T36	
+R29	indicatedBy Arg1:T25 Arg2:T37	
+R30	indicatedBy Arg1:T25 Arg2:T40	
+R31	has Arg1:T46 Arg2:T41	
+R32	targets Arg1:T46 Arg2:T44	

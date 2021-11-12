@@ -1,0 +1,86 @@
+T1	Report 785 841	iBanking Mobile Trojan Poses as Facebook Token Generator
+T2	Person 862 877	Carlos Castillo
+T3	Time 881 893	Apr 17, 2014
+T4	Malware 896 918	Mobile banking Trojans
+T5	AttackPattern_SmallDescription 932 969	pretended to be security applications
+T6	Malware 984 989	Zitmo
+T7	Malware 1020 1029	FakeToken
+T8	Malware 1033 1039	FkSite
+T9	Malware 1047 1054	Perkele
+T10	AttackPattern_SmallDescription 1111 1163	steal incoming SMS messages that could contain mTANs
+T11	AttackPattern_SmallDescription 1335 1353	social-engineering
+T12	AttackPattern_SmallDescription 1408 1480	taking advantage of one of the biggest and most popular social networks.
+T13	Application 1504 1512	Facebook
+T14	Time 1564 1573	May 2011,
+T15	Application 1686 1706	Google Authenticator
+T16	Application 1718 1726	Facebook
+T17	Application 1828 1836	Facebook
+T18	Application 2198 2206	Facebook
+T19	Organization 2229 2240	McAfee Labs
+T20	Malware 2351 2359	iBanking
+T21	AttackPattern_SmallDescription 2491 2635	poses as an official Facebook app that provides a “password token” to protect the account from hijacking by adding another authentication factor
+T22	Indicator 2779 2818	uses the word FaceBook with a capital B
+T23	AttackPattern_SmallDescription 2938 3091	will not work if the IMEI, phone number, network operator and SIM serial number values are the same as those configured by default in an Android emulator
+T24	OperatingSystem 3075 3082	Android
+T25	Software 3083 3091	emulator
+T26	AttackPattern_SmallDescription 3156 3200	will ask for device administrator privileges
+T27	Indicator 3296 3352	“Additional text explaining why this needs to be added,”
+T28	AttackPattern_SmallDescription 3498 3585	shows the following user interface–pretending to be a Facebook password-token generator
+T29	Application 3552 3560	Facebook
+T30	AttackPattern_SmallDescription 3657 3789	simulates the generation of the security code to finally provide the “New Token” that should be used to access your Facebook account
+T31	Application 3773 3781	Facebook
+T32	Application 3837 3845	Facebook
+T33	AttackPattern_SmallDescription 3993 4048	will start two services that will run in the background
+T34	AttackPattern_SmallDescription 4139 4192	execute commands sent by the attacker via SMS or HTTP
+T35	Protocol 4181 4184	SMS
+T36	Protocol 4188 4192	HTTP
+T37	AttackPattern_SmallDescription 4235 4326	Intercept incoming SMS messages (that could include mTAns) and forward them to the attacker
+T38	AttackPattern_SmallDescription 4328 4397	Forward all incoming calls to a phone number specified in the malware
+T39	AttackPattern_SmallDescription 4399 4455	Steal all the SMS messages in the inbox and sent folders
+T40	AttackPattern_SmallDescription 4457 4512	Steal all the call logs (incoming/Outgoing/missed calls
+T41	AttackPattern_SmallDescription 4580 4638;4640 4694	attempt to erase all user data by asking the user to do so External storage such as SD cards will not be affected
+T42	AttackPattern_SmallDescription 4697 4816	Record the surrounding audio captured by the microphone to store it in the SD card and later send it to a remote server
+T43	AttackPattern_SmallDescription 4818 4892	Send a text message, with the body provided by the attacker, to the number
+T44	AttackPattern_SmallDescription 4894 4916	Steal the contact list
+T45	AttackPattern_SmallDescription 4918 4985	Steal all the images (jpg, jpeg, gif and png) stored in the SD card
+T46	AttackPattern_SmallDescription 4987 5031	Leak the GPS location of the infected device
+T47	AttackPattern_SmallDescription 5033 5080	Report all installed applications in the device
+T48	AttackPattern_SmallDescription 5082 5225	Start the malicious services and send a text message to the attacker with the SIM serial number, manufacturer, and model of the infected device
+T49	Vulnerability 5297 5307	Heartbleed
+T50	VirusScanner 5822 5844	McAfee Mobile Security
+T51	OperatingSystem 5858 5865	Android
+T52	Malware 5876 5894	Android/iBanking.B
+R1	has Arg1:T1 Arg2:T2	
+R2	has Arg1:T1 Arg2:T3	
+R3	has Arg1:T4 Arg2:T5	
+R4	uses Arg1:T4 Arg2:T10	
+R5	uses Arg1:T4 Arg2:T11	
+R6	variantOf Arg1:T6 Arg2:T4	
+R7	variantOf Arg1:T7 Arg2:T4	
+R8	variantOf Arg1:T8 Arg2:T4	
+R9	variantOf Arg1:T52 Arg2:T4	
+R10	uses Arg1:T52 Arg2:T12	
+R11	uses Arg1:T52 Arg2:T21	
+R12	indicatedBy Arg1:T52 Arg2:T22	
+R13	uses Arg1:T52 Arg2:T23	
+R14	uses Arg1:T52 Arg2:T26	
+R15	indicatedBy Arg1:T52 Arg2:T27	
+R16	uses Arg1:T52 Arg2:T28	
+R17	uses Arg1:T52 Arg2:T30	
+R18	uses Arg1:T52 Arg2:T33	
+R19	uses Arg1:T52 Arg2:T34	
+R20	indicatedBy Arg1:T52 Arg2:T35	
+R21	indicatedBy Arg1:T52 Arg2:T36	
+R22	uses Arg1:T52 Arg2:T37	
+R23	uses Arg1:T52 Arg2:T38	
+R24	uses Arg1:T52 Arg2:T39	
+R25	uses Arg1:T52 Arg2:T40	
+R26	uses Arg1:T52 Arg2:T41	
+R27	uses Arg1:T52 Arg2:T42	
+R28	uses Arg1:T52 Arg2:T43	
+R29	uses Arg1:T52 Arg2:T44	
+R30	uses Arg1:T52 Arg2:T45	
+R31	uses Arg1:T52 Arg2:T46	
+R32	uses Arg1:T52 Arg2:T47	
+R33	uses Arg1:T52 Arg2:T48	
+*	hasAlias T8 T9

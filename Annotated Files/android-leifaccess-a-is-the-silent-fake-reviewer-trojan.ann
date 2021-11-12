@@ -1,0 +1,283 @@
+T1	Report 783 838	Android/LeifAccess.A is the Silent Fake Reviewer Trojan
+T2	Person 859 872	Fernando Ruiz
+T3	Time 876 888	Mar 03, 2020
+T4	Organization 895 922	McAfee Mobile Research team
+T5	OperatingSystem 941 948	Android
+T6	MalwareFamily 971 991	Android/LeifAccess.A
+T7	Time 1019 1027	May 2019
+T8	Country 1129 1132	USA
+T9	Country 1137 1143	Brazil
+T10	AttackPattern_SmallDescription 1185 1335	abuse OAuth leveraging accessibility services to automatically create accounts in the name of a victim’s legitimate email in multiple third-party apps
+T11	AttackPattern_SmallDescription 1369 1413	create fake reviews on the Google Play store
+T12	Application 1396 1407	Google Play
+T13	AttackPattern_SmallDescription 1442 1482	perform ad-fraud (clicker functionality)
+T14	AttackPattern_SmallDescription 1502 1531	execute arbitrary remote code
+T15	Application 1626 1637	Google Play
+T16	AttackPattern_SmallDescription 1918 1936	Social Engineering
+T17	MalwareFamily 1985 2005	Android/LeifAccess.A
+T18	AttackPattern_SmallDescription 2006 2041	does not show any icon or shortcut.
+T19	AttackPattern_SmallDescription 2045 2230	runs in the background and may ask victims to activate accessibility services to perform most of its malicious activities by displaying a toast notification, simulating a system warning
+T20	OperatingSystem 2613 2620	Android
+T21	Organization 2622 2628	Google
+T22	Application 2698 2709	Google Play
+T23	AttackPattern_SmallDescription 2901 2993	accessibility permissions are granted, the trojan can fully perform its malicious activities
+T24	AttackPattern_SmallDescription 3004 3157	not granted, it will still perform part of the possible commands such as ad-fraud, install short-cuts and update itself, opening the door to new payloads
+T25	Filename 3249 3259	fields.css
+T26	MalwareFamily 3293 3311	Android/LeifAccess
+T27	Application 3337 3348	Google Play
+T28	AttackPattern_SmallDescription 3352 3386	abusing the accessibility services
+T29	AttackPattern_SmallDescription 3400 3543	De-obfuscated list of strings used as full qualified resource name of the view id access to perform fake reviews abusing accessibility services
+T30	MalwareFamily 3544 3562	Android/LeifAccess
+T31	AttackPattern_SmallDescription 3575 3700	download and install the target app because a user account only can write reviews of apps that have previously been installed
+T32	AttackPattern_SmallDescription 3710 3866	try to download through Google Play but there is also an implementation to download apps from an alternative market store (APKPure), as well as direct links
+T33	AttackPattern_SmallDescription 3948 4100	possible to find reviews on Google Play that match with the parameters received from the C&C and stored in the de-obfuscated SharedPreferences XML files
+T34	Application 3976 3987	Google Play
+T35	CommandAndControl 4037 4040	C&C
+T36	MalwareFamily 4642 4662	Android/LeifAccess.A
+T37	AttackPattern_SmallDescription 4663 4808	stores a Hashtable map, in a SharedPreferences XML format, where the key is the function name and the value is the parameter used by the commands
+T38	AttackPattern_SmallDescription 4830 4952	the real function names (plain text) and parameters are obfuscated, encrypted, salted and/or one-way hashed (md5 or sha-1)
+T39	AttackPattern_SmallDescription 4955 5084	Values are stored as obfuscated strings using data compression with zip.deflater and base64.enconde as defense evasion techniques
+T40	AttackPattern_SmallDescription 5091 5156	strings are obfuscated more than one time with the same algorithm
+T41	AttackPattern_SmallDescription 5159 5359	Each key is calculated using an md5 digest checksum of the byte array produced by a custom base64 of the string resulting from a custom operation over ‘function names’ and ‘package name’ of the sample
+T42	AttackPattern_SmallDescription 5371 5456	hundreds of different variants of this family, each one with a different package name
+T43	CommandAndControl 5664 5667	C&C
+T44	AttackPattern_SmallDescription 6675 6789	received commands may also be stored locally in an SQLite DB that logs part of the action performed by the malware
+T45	Application 6832 6843	Google Play
+T46	MalwareFamily 6855 6865	LeifAccess
+T48	Infrastructure 6978 6997	Google Play Protect
+T49	AttackPattern_SmallDescription 6999 7171	the package is embedded on the Google Play app with package name ‘com.android.vending’ and it will try to access the view id ‘play_protect_settings:’ as defined on string g
+T51	HostingMalware 7030 7041	Google Play
+T52	Filename 7064 7085	‘com.android.vending’
+T55	AttackPattern_SmallDescription 7308 7389	locate the ‘android:id/switch_widget’ to try to deactivate the scan device option
+T57	MalwareFamily 7447 7457	LeifAccess
+T58	AttackPattern_SmallDescription 7516 7669	monetization technique used by this family is the creation of accounts in the name of real user identities and accounts registered on the infected device
+T59	AttackPattern_SmallDescription 7691 7854	abusing the accessibility services to perform an account creation and login with the Google Sign-In OAuth 2.0 that many legitimate services integrate in their apps
+T60	Organization 7776 7782	Google
+T61	Infrastructure 7776 7800	Google Sign-In OAuth 2.0
+T62	MalwareFamily 7857 7875	Android/LeifAccess
+T63	AttackPattern_SmallDescription 7880 7967	download and install the target app to later set up an account without user interaction
+T64	MalwareFamily 8008 8026	Android/LeifAccess
+T65	AttackPattern_SmallDescription 8027 8130	uses AccesibilityEvent to navigate into a dating app to create an account using the Google login option
+T66	Organization 8111 8117	Google
+T67	AttackPattern_SmallDescription 8290 8385	perform fake account creation, mostly related to categories such as shopping, dating and social
+T68	Application 8388 8402	zalora.android
+T69	Application 8404 8414	tiket.gits
+T70	Application 8416 8429	b2w.submarino
+T71	Application 8431 8436	zzkko
+T72	Application 8438 8446	phrendly
+T73	Application 8448 8462	newchic.client
+T74	Application 8464 8480	com.netshoes.app
+T75	Application 8468 8480	netshoes.app
+T76	Application 8482 8492	makemytrip
+T77	Application 8494 8498	like
+T78	Application 8500 8514	lazada.android
+T79	Application 8516 8520	joom
+T80	Application 8522 8536	jabong.android
+T81	Application 8538 8552	startv.hotstar
+T82	Application 8554 8569	banggood.client
+T83	Application 8571 8605	alibaba.intl.android.apps.poseidon
+T84	Application 8607 8627	alibaba.aliexpresshd
+T85	Application 8629 8646	airyrooms.android
+T86	AttackPattern_SmallDescription 8689 8836	Clicker functionality is also implemented so advertisement traffic is requested by the infected device without showing a single ad in the interface
+T87	AttackPattern_SmallDescription 8839 8905	Specific user-agent headers are sent from C&C to perform ad-fraud.
+T88	CommandAndControl 8881 8884	C&C
+T89	CommandAndControl 8985 8988	C&C
+T90	AttackPattern_SmallDescription 9053 9245	apps that run ads integrate one or more ad network SDKs (usually distributed as JAR libraries) into it to properly request the ad content gathering location, device type or even some user data
+T91	AttackPattern_SmallDescription 9269 9343	does not integrate any SDK packages into the source code to access the ads
+T92	MalwareFamily 9345 9363	Android/LeifAccess
+T93	AttackPattern_SmallDescription 9364 9529	can load ads using the proper ad-network format via direct links for Ad Clicks or Ad Impressions (IMPR) that the C&C server pre-builds and sends to it in JSON format
+T94	CommandAndControl 9477 9480	C&C
+T95	AttackPattern_SmallDescription 9575 9830	able to request a URL with the full parameters required to simulate a legitimate click coming from a user clicking a banner in the context of a legitimate application, evading the SDK integration which also contributes to keep a relatively small file size
+T96	AttackPattern_SmallDescription 9902 10074	show real ads in full screen out of the context of any app after unlocking the device if it receives the proper commands, or based on a certain frequency defined by the C&C
+T97	CommandAndControl 10071 10074	C&C
+T98	AttackPattern_SmallDescription 10089 10150	show an overlay icon redirecting to ads as a floating overlay
+T99	AttackPattern_SmallDescription 10153 10239	Arbitrary shortcuts can be created in the home screen based on the parameters received
+T100	AttackPattern_SmallDescription 10399 10483	able to launch toast messages to try to convince victims to perform certain actions.
+T101	AttackPattern_SmallDescription 10568 10754	used by the malware inside the “dialog” attribute which is executed as a toast notification in the intervals of the parameter “notifi_inter” (28800000 milliseconds, which equals 8 hours)
+T102	AttackPattern_SmallDescription 10992 11204	the original installed application is just a wrapper that, once executed, can decrypt a JAR from the asset file from path ‘assets/fields.css’ which is dynamically loaded using reflection into the main application
+T103	Filename 11115 11132	assets/fields.css
+T104	AttackPattern_SmallDescription 11206 11287	System API calls strings are also obfuscated using a custom base64 implementation
+T105	MalwareFamily 11416 11436	Android/LeifAccess.A
+T106	CommandAndControl 11557 11584	command and control servers
+T107	AttackPattern_SmallDescription 11649 11788	domain names contain words that can make people think they belong to a legitimate advertisement network or a Content Delivery Network (CDN)
+T108	URL 11791 11818	hxxp://api.adsnativeXXX.com
+T109	URL 11820 11846	hxxp://cdn.leadcdnbXXX.com
+T110	AttackPattern_SmallDescription 11899 12099	samples are available in the C&C hosted as direct APK links but also may be distributed in social media or as a malvertising campaign that tries to convince users to install a critical security update
+T111	CommandAndControl 11928 11931	C&C
+T112	AttackPattern_SmallDescription 12106 12231	variant label is SystemSecurityUpdates and the package name starts with ‘com.services.xxxx’, pretending to be a system update
+T113	Filename 12179 12196	com.services.xxxx
+T114	MalwareFamily 12246 12266	Android/LeifAccess.A
+T115	AttackPattern_SmallDescription 12278 12339	hosted and distributed through the Discord game chat platform
+T116	Infrastructure 12313 12340	Discord game chat platform.
+T117	URL 12414 12469	hxxps://cdn.discordapp.com/attachments/XXXXXXXXX/XXXXXX
+T118	AttackPattern_SmallDescription 12481 12540	requires the user to download and install the malicious APK
+T119	AttackPattern_SmallDescription 12560 12578	social engineering
+T120	AttackPattern_SmallDescription 12617 12719	Scaring people about potential threats using ads, or luring gamers that want to add a “hidden feature”
+T121	AttackPattern_SmallDescription 12859 12993	must dismiss security notifications or deactivate security measures to allow aggressive permissions or activate accessibility services
+T122	AttackPattern_SmallDescription 13014 13269	ability to install apps and then post fake reviews on Google Play in the name of a victim, create fake accounts on third party services plus the self-update mechanism, in conjunction with multiple obfuscation and encryption techniques used as self-defense
+T123	Application 13068 13079	Google Play
+T124	AttackPattern_SmallDescription 13324 13378	stay under the radar for victims without AV protection
+T125	AttackPattern_SmallDescription 13437 13479	Download Apps from Google Play or APK Pure
+T126	Application 13456 13467	Google Play
+T127	Application 13471 13479	APK Pure
+T128	AttackPattern_SmallDescription 13481 13511	Deactivate Google Play Protect
+T129	Application 13492 13511	Google Play Protect
+T130	AttackPattern_SmallDescription 13513 13566	Create Fake Accounts with OAuth abusing accessibility
+T131	AttackPattern_SmallDescription 13568 13600	Post fake reviews on Google Play
+T132	Application 13589 13600	Google Play
+T133	AttackPattern_SmallDescription 13602 13638	Create short cuts on the main screen
+T134	AttackPattern_SmallDescription 13640 13688	Display Ads in the background and in full screen
+T135	AttackPattern_SmallDescription 13690 13701	Self-Update
+T136	MalwareFamily 13703 13721	Android/LeifAccess
+T137	AttackPattern_SmallDescription 13722 13850	implements multiple techniques for self-defense to encrypt and obfuscate the malicious behavior and to try to avoid AV detection
+T138	AttackPattern_SmallDescription 13914 14047	considerable amount of resources are destined to infrastructure and automation for sample generation in a server-side polymorphic way
+T139	AttackPattern_SmallDescription 14050 14086	New variants are constantly deployed
+T140	AttackPattern_SmallDescription 14193 14251	affects App Market credibility and adversaries/ad-networks
+T141	Application 14599 14610	Google Play
+T142	AttackPattern_SmallDescription 14764 14784	ranking manipulation
+T143	Organization 15245 15251	Google
+T144	VirusScanner 15368 15390	McAfee Mobile Security
+T145	MalwareFamily 15394 15414	Android/LeifAccess.A
+T146	MalwareFamily 15419 15439	Android/LeifAccess.B
+T147	Hash 15523 15587	6032c1a8b54f3daf9697a49fdd398d3ebe35f3fec3d945d6d8e9588043332969
+T148	Filename 15589 15622	com.services.ibgpe.hflbsqqjrmlfej
+T149	Hash 15624 15688	032184204b50f0634ad360a2090ea9904c012cb839b5a0364a53bf261ce8414e
+T150	Filename 15690 15726	com.services.kxyiqc.zzwkzckzfiojjzpw
+T151	Hash 15728 15792	0a95e9cce637a6eb71e4c663e207146fe9cde0573265d4d93433e1242189a35c
+T152	Filename 15794 15824	com.services.jifat.qaxtitmumdd
+T153	Hash 15826 15890	533a395ed16143bbe6f258f3146ea0ea3c56f71e889ace81039800803d0b1e18
+T154	Filename 15892 15924	com.services.xvpyv.tteawsribdsvi
+T155	Hash 15926 15990	6755f708d75a6b8b034eae9bcb6176679d23f2dc6eb00b8656d00f8ee0ec26c1
+T156	Filename 15992 16023	com.services.myzmuexri.nrphcanr
+T157	DomainName 16034 16052	adsnative123[.]com
+T158	DomainName 16054 16067	Myapkcdn[.]in
+T159	DomainName 16069 16082	adsv123[.]com
+T160	URL 16099 16192	https://android-developers.googleblog.com/2018/12/in-reviews-we-trust-making-google-play.html
+R1	targets Arg1:T6 Arg2:T5	
+R2	has Arg1:T6 Arg2:T7	
+R3	targets Arg1:T6 Arg2:T8	
+R4	targets Arg1:T6 Arg2:T9	
+R5	uses Arg1:T6 Arg2:T10	
+R6	uses Arg1:T6 Arg2:T11	
+R7	targets Arg1:T6 Arg2:T12	
+R8	uses Arg1:T6 Arg2:T13	
+R9	uses Arg1:T6 Arg2:T14	
+R10	targets Arg1:T6 Arg2:T15	
+R11	uses Arg1:T6 Arg2:T16	
+R12	uses Arg1:T17 Arg2:T18	
+R13	uses Arg1:T17 Arg2:T19	
+R14	targets Arg1:T17 Arg2:T20	
+R15	targets Arg1:T17 Arg2:T22	
+R16	uses Arg1:T17 Arg2:T23	
+R17	uses Arg1:T17 Arg2:T24	
+R18	indicatedBy Arg1:T26 Arg2:T25	
+R19	targets Arg1:T26 Arg2:T27	
+R20	uses Arg1:T26 Arg2:T28	
+R21	uses Arg1:T30 Arg2:T29	
+R22	uses Arg1:T30 Arg2:T31	
+R23	uses Arg1:T30 Arg2:T32	
+R24	uses Arg1:T30 Arg2:T33	
+R25	targets Arg1:T30 Arg2:T34	
+R26	communicatesWith Arg1:T30 Arg2:T35	
+R27	uses Arg1:T36 Arg2:T37	
+R28	uses Arg1:T36 Arg2:T38	
+R29	uses Arg1:T36 Arg2:T39	
+R30	uses Arg1:T36 Arg2:T40	
+R31	uses Arg1:T36 Arg2:T41	
+R32	uses Arg1:T36 Arg2:T42	
+R33	uses Arg1:T36 Arg2:T44	
+R34	uses Arg1:T46 Arg2:T48	
+R35	uses Arg1:T46 Arg2:T49	
+R36	uses Arg1:T46 Arg2:T51	
+R37	uses Arg1:T46 Arg2:T55	
+R38	indicatedBy Arg1:T52 Arg2:T46	
+R41	uses Arg1:T57 Arg2:T58	
+R42	uses Arg1:T57 Arg2:T59	
+R43	uses Arg1:T57 Arg2:T61	
+R44	uses Arg1:T62 Arg2:T63	
+R45	uses Arg1:T64 Arg2:T65	
+R46	uses Arg1:T64 Arg2:T67	
+R47	targets Arg1:T64 Arg2:T68	
+R48	targets Arg1:T64 Arg2:T69	
+R49	targets Arg1:T64 Arg2:T70	
+R50	targets Arg1:T64 Arg2:T71	
+R51	targets Arg1:T64 Arg2:T72	
+R52	targets Arg1:T64 Arg2:T73	
+R53	targets Arg1:T64 Arg2:T74	
+R54	targets Arg1:T64 Arg2:T76	
+R55	targets Arg1:T64 Arg2:T77	
+R56	targets Arg1:T64 Arg2:T78	
+R57	targets Arg1:T64 Arg2:T79	
+R58	targets Arg1:T64 Arg2:T80	
+R59	targets Arg1:T64 Arg2:T81	
+R60	targets Arg1:T64 Arg2:T82	
+R61	targets Arg1:T64 Arg2:T83	
+R62	targets Arg1:T64 Arg2:T84	
+R63	targets Arg1:T64 Arg2:T85	
+R64	uses Arg1:T92 Arg2:T86	
+R65	uses Arg1:T92 Arg2:T87	
+R66	uses Arg1:T92 Arg2:T90	
+R67	uses Arg1:T92 Arg2:T91	
+R68	uses Arg1:T92 Arg2:T93	
+R69	uses Arg1:T92 Arg2:T95	
+R70	uses Arg1:T92 Arg2:T96	
+R71	uses Arg1:T92 Arg2:T98	
+R72	uses Arg1:T92 Arg2:T99	
+R73	uses Arg1:T92 Arg2:T100	
+R74	uses Arg1:T92 Arg2:T101	
+R75	uses Arg1:T105 Arg2:T102	
+R76	indicatedBy Arg1:T105 Arg2:T103	
+R77	uses Arg1:T105 Arg2:T104	
+R78	communicatesWith Arg1:T105 Arg2:T106	
+R79	uses Arg1:T105 Arg2:T107	
+R80	indicatedBy Arg1:T105 Arg2:T108	
+R81	indicatedBy Arg1:T105 Arg2:T109	
+R82	uses Arg1:T114 Arg2:T110	
+R83	uses Arg1:T114 Arg2:T112	
+R84	indicatedBy Arg1:T114 Arg2:T113	
+R85	uses Arg1:T114 Arg2:T115	
+R86	uses Arg1:T114 Arg2:T116	
+R87	indicatedBy Arg1:T114 Arg2:T117	
+R88	uses Arg1:T114 Arg2:T118	
+R89	uses Arg1:T114 Arg2:T119	
+R90	uses Arg1:T114 Arg2:T120	
+R91	uses Arg1:T114 Arg2:T121	
+R92	uses Arg1:T136 Arg2:T122	
+R93	targets Arg1:T136 Arg2:T123	
+R94	uses Arg1:T136 Arg2:T125	
+R95	targets Arg1:T136 Arg2:T126	
+R96	targets Arg1:T136 Arg2:T127	
+R97	uses Arg1:T136 Arg2:T128	
+R98	targets Arg1:T136 Arg2:T129	
+R99	uses Arg1:T136 Arg2:T130	
+R100	uses Arg1:T136 Arg2:T131	
+R101	targets Arg1:T136 Arg2:T132	
+R102	uses Arg1:T136 Arg2:T133	
+R103	uses Arg1:T136 Arg2:T134	
+R104	uses Arg1:T136 Arg2:T135	
+R105	uses Arg1:T136 Arg2:T137	
+R106	uses Arg1:T136 Arg2:T138	
+R107	uses Arg1:T136 Arg2:T139	
+R108	uses Arg1:T136 Arg2:T140	
+R109	targets Arg1:T136 Arg2:T141	
+R110	uses Arg1:T136 Arg2:T142	
+R111	indicatedBy Arg1:T145 Arg2:T147	
+R112	indicatedBy Arg1:T145 Arg2:T148	
+R113	indicatedBy Arg1:T145 Arg2:T149	
+R114	indicatedBy Arg1:T145 Arg2:T150	
+R115	indicatedBy Arg1:T145 Arg2:T151	
+R116	indicatedBy Arg1:T145 Arg2:T152	
+R117	indicatedBy Arg1:T145 Arg2:T153	
+R118	indicatedBy Arg1:T145 Arg2:T154	
+R119	indicatedBy Arg1:T145 Arg2:T155	
+R120	indicatedBy Arg1:T145 Arg2:T156	
+R121	indicatedBy Arg1:T145 Arg2:T157	
+R122	indicatedBy Arg1:T145 Arg2:T158	
+R123	indicatedBy Arg1:T145 Arg2:T159	
+*	hasAlias T17 T26
+*	hasAlias T57 T62
+*	hasAlias T145 T146
+R124	communicatesWith Arg1:T114 Arg2:T111	
+R125	communicatesWith Arg1:T92 Arg2:T97	
+R126	communicatesWith Arg1:T92 Arg2:T94	
+R127	communicatesWith Arg1:T92 Arg2:T89	

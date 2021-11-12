@@ -1,0 +1,101 @@
+T1	Report 767 814	Spitmo vs Zitmo: Banking Trojans Target Android
+T2	Person 835 850	Carlos Castillo
+T3	Time 854 866	Sep 14, 2011
+T4	MalwareFamily 869 875	SpyEye
+T5	MalwareFamily 880 884	Zeus
+T6	AttackPattern_SmallDescription 972 1150	Bankers steal bank passwords and other financial data.) At the beginning of the year there was a rumor about the “merger” of both toolkits into a new generation of banking Trojan
+T7	MalwareFamily 1187 1191	Zeus
+T8	MalwareFamily 1244 1250	SpyEye
+T9	OperatingSystem 1326 1333	Android
+T10	MalwareFamily 1431 1435	Zeus
+T11	OperatingSystem 1448 1455	Android
+T12	Malware 1466 1471	Zitmo
+T13	MalwareFamily 1477 1481	Zeus
+T14	MalwareFamily 1498 1504	SpyEye
+T15	Malware 1513 1519	Spitmo
+T16	MalwareFamily 1525 1531	SpyEye
+T17	AttackPattern_SmallDescription 1594 1855	defeat a second factor of authentication in an electronic transaction–in this case an mTAN (mobile transaction authentication number)–by forwarding all incoming SMS to a remote server after the username and password have been captured from the infected computer
+T18	MalwareFamily 1861 1867	SpyEye
+T19	MalwareFamily 1918 1924	SpyEye
+T20	MalwareFamily 1929 1933	Zeus
+T21	AttackPattern_SmallDescription 1934 2091	use the same distribution method (a computer infected with SpyEye will suggest the user enter a URL in a mobile device to download the malicious Android app)
+T22	MalwareFamily 1993 1999	SpyEye
+T23	OperatingSystem 2079 2086	Android
+T24	MalwareFamily 2132 2138	SpyEye
+T25	AttackPattern_SmallDescription 2148 2173	look like a security tool
+T26	MalwareFamily 2178 2182	ZeuS
+T27	MalwareFamily 2201 2207	SpyEye
+T28	AttackPattern_SmallDescription 2222 2256	run in the background as a service
+T29	AttackPattern_SmallDescription 2264 2344	not active until a predetermined number (325000) is dialed or an SMS is received
+T30	MalwareFamily 2348 2354	SpyEye
+T31	AttackPattern_SmallDescription 2575 2604	seeing the IMEI on the screen
+T32	AttackPattern_SmallDescription 2610 2791	user (of the infected computer) is instructed to call a specific number to get a fake “authentication code” that will always be the same (because it is hardcoded in the application)
+T33	MalwareFamily 2803 2809	SpyEye
+T34	AttackPattern_SmallDescription 2814 2869	intercepted messages can be transferred via SMS or HTTP
+T35	Protocol 2858 2861	SMS
+T36	Protocol 2865 2869	HTTP
+T37	AttackPattern_SmallDescription 2876 2949	configuration is stored in a file in the original app called Settings.xml
+T38	Filename 2937 2949	Settings.xml
+T39	AttackPattern_SmallDescription 2957 3021	malware will check if the value in “Send” is 1 (HTTP) or 2 (SMS)
+T40	Protocol 3005 3009	HTTP
+T41	Protocol 3017 3020	SMS
+T42	AttackPattern_SmallDescription 3043 3108	will forward the SMS to the number specified in the telephone tag
+T43	Protocol 3060 3063	SMS
+T44	AttackPattern_SmallDescription 3112 3220	Sending an SMS to the attacker can affect victims because the forwarded SMS can generate additional expenses
+T45	Protocol 3123 3126	SMS
+T46	Protocol 3184 3187	SMS
+T47	MalwareFamily 3369 3373	Zeus
+T48	MalwareFamily 3375 3381	SpyEye
+T49	AttackPattern_SmallDescription 3382 3456	carries its URLs for receiving the stolen information in one settings file
+T50	AttackPattern_SmallDescription 3502 3540	the URLs can be changed among variants
+T51	AttackPattern_SmallDescription 3550 3610	stolen SMS are sent without encryption to the attacker’s URL
+T52	Malware 3619 3635	Zeus for Android
+T53	AttackPattern_SmallDescription 3643 3710	uses a JSON object in a POST request to send the stolen information
+T54	MalwareFamily 3713 3719	SpyEye
+T55	AttackPattern_SmallDescription 3720 3881	uses URLEncoder to “encode” the data by converting some characters (except letters, numbers, and some special characters) into hexadecimal values preceded by “%.
+T56	MalwareFamily 4008 4012	Zeus
+T57	MalwareFamily 4017 4023	SpyEye
+T58	AttackPattern_SmallDescription 4049 4168	to obtain the mTANs sent in an SMS to perform electronic transactions that require this second factor of authentication
+T59	Malware 4193 4211	SpyEye for Android
+T60	AttackPattern_SmallDescription 4212 4332	adds interesting functions to slow down the analysis process, provide flexibility, and affect the user in different ways
+T61	Malware 4590 4604	Android/Spitmo
+T62	Malware 4619 4635	Android/Spitmo.B
+R1	has Arg1:T4 Arg2:T6	
+R2	uses Arg1:T4 Arg2:T21	
+R3	has Arg1:T5 Arg2:T6	
+R4	uses Arg1:T5 Arg2:T21	
+R5	targets Arg1:T7 Arg2:T9	
+R6	targets Arg1:T8 Arg2:T9	
+R7	targets Arg1:T10 Arg2:T11	
+R8	uses Arg1:T10 Arg2:T17	
+R9	variantOf Arg1:T12 Arg2:T13	
+R10	uses Arg1:T12 Arg2:T25	
+R11	uses Arg1:T12 Arg2:T28	
+R12	uses Arg1:T12 Arg2:T31	
+R13	uses Arg1:T12 Arg2:T53	
+R14	uses Arg1:T14 Arg2:T17	
+R15	variantOf Arg1:T15 Arg2:T16	
+R16	uses Arg1:T27 Arg2:T29	
+R17	uses Arg1:T30 Arg2:T32	
+R18	uses Arg1:T33 Arg2:T34	
+R19	indicatedBy Arg1:T33 Arg2:T35	
+R20	indicatedBy Arg1:T33 Arg2:T36	
+R21	uses Arg1:T33 Arg2:T37	
+R22	indicatedBy Arg1:T33 Arg2:T38	
+R23	uses Arg1:T33 Arg2:T39	
+R24	indicatedBy Arg1:T33 Arg2:T40	
+R25	indicatedBy Arg1:T33 Arg2:T41	
+R26	uses Arg1:T33 Arg2:T42	
+R27	indicatedBy Arg1:T33 Arg2:T43	
+R28	uses Arg1:T33 Arg2:T44	
+R29	indicatedBy Arg1:T33 Arg2:T45	
+R30	indicatedBy Arg1:T33 Arg2:T46	
+R31	uses Arg1:T48 Arg2:T49	
+R32	uses Arg1:T48 Arg2:T50	
+R33	uses Arg1:T48 Arg2:T51	
+R34	uses Arg1:T54 Arg2:T55	
+R35	uses Arg1:T56 Arg2:T58	
+R36	uses Arg1:T57 Arg2:T58	
+R37	uses Arg1:T59 Arg2:T60	
+*	hasAlias T12 T52
+*	hasAlias T15 T59 T61 T62

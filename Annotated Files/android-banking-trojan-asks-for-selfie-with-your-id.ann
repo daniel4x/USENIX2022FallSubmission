@@ -1,0 +1,97 @@
+T1	Report 775 826	Android Banking Trojan Asks for Selfie With Your ID
+T2	Person 847 862	Carlos Castillo
+T3	Time 866 878	Oct 13, 2016
+T4	Time 888 906	first half of 2016
+T5	Malware 923 946	Android banking Trojans
+T7	AttackPattern_SmallDescription 1052 1186	Victims were requested to provide “Mother’s Maiden Name,” “Father’s Middle Name,” “Maternal Grandmothers Name,” or a “Memorable Word.”
+T8	AttackPattern_LargeDescription 1052 1300	Victims were requested to provide “Mother’s Maiden Name,” “Father’s Middle Name,” “Maternal Grandmothers Name,” or a “Memorable Word.” Attackers used that data to respond to security questions and obtain illegal access to the victims’ bank accounts
+T9	AttackPattern_SmallDescription 1197 1270	used that data to respond to security questions and obtain illegal access
+T10	Organization 1316 1348	McAfee Labs Mobile Research Team
+T12	Malware 1410 1417	Acecard
+T13	Malware 1423 1428	Torec
+T14	Application 1448 1451	Tor
+T15	CommandAndControl 1476 1490	control server
+T16	AttackPattern_SmallDescription 1567 1634	requesting credit card information and second-factor authentication
+T17	AttackPattern_SmallDescription 1662 1707	asks for a selfie with your identity document
+T19	AttackPattern_SmallDescription 1905 2037	tricks users into installing the malware by pretending to be an adult video app or a codec/plug-in necessary to see a specific video
+T20	AttackPattern_SmallDescription 2097 2134	hides the icon from the home launcher
+T21	AttackPattern_SmallDescription 2139 2190	constantly asks for device administrator privileges
+T22	AttackPattern_SmallDescription 2273 2321	constantly monitors the opening of specific apps
+T23	AttackPattern_SmallDescription 2366 2394	pretending to be Google Play
+T24	Application 2383 2394	Google Play
+T25	AttackPattern_SmallDescription 2399 2430	asking for a credit card number
+T26	AttackPattern_SmallDescription 2501 2642	asks for more personal and credit card information such as cardholder name, date of birth, phone number, credit card expiration date, and CCV
+T27	AttackPattern_SmallDescription 2762 2803	ask for a second factor of authentication
+T28	AttackPattern_SmallDescription 2841 2871	asks for the HK (Hong Kong) ID
+T29	Country 2854 2856	HK
+T30	Country 2858 2867	Hong Kong
+T31	Country 2912 2921	Singapore
+T32	AttackPattern_SmallDescription 2923 3002	asking for the National Registration Identity Card and the Singaporean passport
+T33	Country 2982 2993	Singaporean
+T34	AttackPattern_SmallDescription 3089 3126	offers a fake “identity confirmation”
+T35	AttackPattern_LargeDescription 3089 3155;3161 3329;3336 3391	offers a fake “identity confirmation” that consists of three steps first two steps ask the user to upload a clean and readable photo of the front and back side of the victim’s identity document (national ID, passport, driver’s license) final step asks for a selfie with the identity document
+T36	AttackPattern_SmallDescription 3177 3329	ask the user to upload a clean and readable photo of the front and back side of the victim’s identity document (national ID, passport, driver’s license)
+T37	AttackPattern_SmallDescription 3347 3391	asks for a selfie with the identity document
+T39	Malware 3478 3484	GM Bot
+T40	Time 3518 3526	February
+T41	Organization 3529 3553	IBM SecurityIntelligence
+T43	Malware 3605 3612	Acecard
+T44	AttackPattern_SmallDescription 3657 3683	social engineering attacks
+T45	VirusScanner 4184 4206	McAfee Mobile Security
+T46	Malware 4230 4243	Android/Torec
+T47	VirusScanner 4355 4377	McAfee Mobile Security
+T48	Application 4439 4458	com.android.vending
+T49	Application 4460 4484	com.google.android.music
+T50	Application 4486 4511	com.google.android.videos
+T51	Application 4513 4542	com.google.android.play.games
+T52	Application 4544 4573	com.google.android.apps.books
+T53	Application 4575 4587	com.whatsapp
+T54	Application 4589 4603	com.viber.voip
+T55	Application 4605 4624	com.dropbox.android
+T56	Application 4626 4640	com.tencent.mm
+T57	Application 4642 4663	jp.naver.line.android
+R1	has Arg1:T1 Arg2:T2	
+R2	has Arg1:T1 Arg2:T3	
+R4	uses Arg1:T5 Arg2:T8	
+R5	has Arg1:T8 Arg2:T7	
+R6	has Arg1:T8 Arg2:T9	
+R8	communicatesWith Arg1:T12 Arg2:T15	
+R9	uses Arg1:T12 Arg2:T16	
+R10	uses Arg1:T12 Arg2:T17	
+R11	uses Arg1:T12 Arg2:T19	
+R12	uses Arg1:T12 Arg2:T20	
+R13	uses Arg1:T12 Arg2:T21	
+R14	uses Arg1:T12 Arg2:T22	
+R15	uses Arg1:T12 Arg2:T23	
+R16	uses Arg1:T12 Arg2:T25	
+R17	uses Arg1:T12 Arg2:T26	
+R18	uses Arg1:T12 Arg2:T27	
+R19	uses Arg1:T12 Arg2:T28	
+R20	targets Arg1:T12 Arg2:T31	
+R21	uses Arg1:T12 Arg2:T32	
+R22	uses Arg1:T12 Arg2:T35	
+R23	uses Arg1:T13 Arg2:T14	
+R26	has Arg1:T35 Arg2:T34	
+R27	has Arg1:T35 Arg2:T36	
+R28	has Arg1:T35 Arg2:T37	
+R30	uses Arg1:T43 Arg2:T44	
+R31	targets Arg1:T43 Arg2:T48	
+R32	targets Arg1:T43 Arg2:T49	
+R33	targets Arg1:T43 Arg2:T50	
+R34	targets Arg1:T43 Arg2:T51	
+R35	targets Arg1:T43 Arg2:T52	
+R36	targets Arg1:T43 Arg2:T53	
+R37	targets Arg1:T43 Arg2:T54	
+R38	targets Arg1:T43 Arg2:T55	
+R39	targets Arg1:T43 Arg2:T56	
+R40	targets Arg1:T43 Arg2:T57	
+*	hasAlias T12 T13
+*	hasAlias T29 T30
+*	hasAlias T31 T33
+*	hasAlias T43 T46
+R24	targets Arg1:T12 Arg2:T30	
+R25	has Arg1:T39 Arg2:T40	
+R3	variantOf Arg1:T12 Arg2:T5	
+T6	OperatingSystem 923 930	Android
+R7	targets Arg1:T5 Arg2:T6	
+R29	targets Arg1:T12 Arg2:T6	

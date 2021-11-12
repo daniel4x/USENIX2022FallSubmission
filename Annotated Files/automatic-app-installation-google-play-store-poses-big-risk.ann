@@ -1,0 +1,77 @@
+T1	Report 2152 2210	Automatic App Installation from Google Play Poses Big Risk
+T2	Application 2184 2195	Google Play
+T3	Person 2231 2247	Daisuke Nakajima
+T4	Time 2251 2263	Mar 03, 2014
+T5	OperatingSystem 2266 2273	Android
+T6	Application 2331 2342	Google Play
+T7	Organization 2585 2591	McAfee
+T8	Application 2627 2638	Google Play
+T9	AttackPattern_SmallDescription 2651 2726	automatically downloads, installs, and launches other apps from Google Play
+T10	Application 2715 2726	Google Play
+T11	AttackPattern_SmallDescription 2760 2931	automatic installation occurs with the Google account’s authorization tokens, provided by the user only once, which communicates with Google Play URLs in an unofficial way
+T12	Application 2894 2905	Google Play
+T13	Application 2998 3009	Google Play
+T14	Application 3051 3062	Google Play
+T15	Country 3072 3080	Japanese
+T16	AttackPattern_SmallDescription 3091 3209	allows them to download and view adult movies in return for installing at least five apps among a list of more than 10
+T17	AttackPattern_SmallDescription 3310 3411	get pay-per-install affiliate rewards in an easy–and possibly prohibited–way that betrays advertisers
+T18	AttackPattern_SmallDescription 3431 3518	remote server might later change the list of apps and replace them with malicious ones,
+T19	AttackPattern_SmallDescription 3572 3631	offers adult movies in return for installing five more apps
+T20	AttackPattern_SmallDescription 3648 3684	grabs the Google account information
+T21	Organization 3658 3664	Google
+T22	AttackPattern_SmallDescription 3703 3854	requests that the user authorize the app to access Google services using the AccountManager.getAccountsByType() and AccountMangaer.getAuthToken() APIs.
+T23	Organization 3754 3760	Google
+T24	Indicator 3780 3814	AccountManager.getAccountsByType()
+T25	Indicator 3819 3848	AccountMangaer.getAuthToken()
+T26	Organization 3952 3958	Google
+T27	OperatingSystem 4091 4098	Android
+T28	AttackPattern_SmallDescription 4222 4298	requests users authorize to access to the SID and LSID of the Google account
+T29	AttackPattern_SmallDescription 4345 4439	accesses and interacts several times in an unofficial way with the URLs managed by Google Play
+T30	Application 4428 4439	Google Play
+T31	AttackPattern_SmallDescription 4461 4546	app developer somehow reverse-engineered the protocol used in the Google Play service
+T32	Application 4527 4538	Google Play
+T33	Protocol 4562 4566	HTTP
+T34	AttackPattern_SmallDescription 4619 4742	obtains a token to directly request the download of any free apps on Google Play and initiates their automated installation
+T35	Application 4688 4699	Google Play
+T36	AttackPattern_SmallDescription 4754 4828	triggers the automatic installation of five selected apps from Google Play
+T37	Application 4817 4828	Google Play
+T38	Application 4874 4885	Google Play
+T39	AttackPattern_SmallDescription 5041 5072	launches all the installed apps
+T40	Application 5368 5379	Google Play
+T41	Organization 5576 5582	Google
+T42	Indicator 5872 5884	GET_ACCOUNTS
+T43	Indicator 5889 5904	USE_CREDENTIALS
+T44	Organization 6092 6098	Google
+T45	Organization 6265 6271	Google
+T46	Indicator 6388 6400	GET_ACCOUNTS
+T47	Indicator 6405 6420	USE_CREDENTIALS
+T48	VirusScanner 6444 6466	McAfee Mobile Security
+T49	Malware 6505 6522	Android/BadInst.A
+R1	has Arg1:T1 Arg2:T3	
+R2	has Arg1:T1 Arg2:T4	
+R3	targets Arg1:T49 Arg2:T5	
+R4	uses Arg1:T49 Arg2:T9	
+R5	uses Arg1:T49 Arg2:T11	
+R6	targets Arg1:T49 Arg2:T15	
+R7	uses Arg1:T49 Arg2:T16	
+R8	uses Arg1:T49 Arg2:T17	
+R9	uses Arg1:T49 Arg2:T18	
+R10	uses Arg1:T49 Arg2:T19	
+R11	uses Arg1:T49 Arg2:T20	
+R12	uses Arg1:T49 Arg2:T22	
+R13	indicatedBy Arg1:T49 Arg2:T24	
+R14	indicatedBy Arg1:T49 Arg2:T25	
+R15	uses Arg1:T49 Arg2:T28	
+R16	uses Arg1:T49 Arg2:T29	
+R17	uses Arg1:T49 Arg2:T31	
+R18	indicatedBy Arg1:T49 Arg2:T33	
+R19	uses Arg1:T49 Arg2:T34	
+R20	uses Arg1:T49 Arg2:T36	
+R21	uses Arg1:T49 Arg2:T37	
+R22	uses Arg1:T49 Arg2:T38	
+R23	uses Arg1:T49 Arg2:T39	
+R24	uses Arg1:T49 Arg2:T40	
+R25	indicatedBy Arg1:T49 Arg2:T42	
+R26	indicatedBy Arg1:T49 Arg2:T43	
+R27	indicatedBy Arg1:T49 Arg2:T46	
+R28	indicatedBy Arg1:T49 Arg2:T47	

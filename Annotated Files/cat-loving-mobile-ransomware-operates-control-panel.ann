@@ -1,0 +1,66 @@
+T1	Report 789 847	‘Cat-Loving’ Mobile Ransomware Operates With Control Panel
+T2	Person 868 881	Fernando Ruiz
+T3	Time 885 897	Aug 08, 2016
+T4	Organization 913 953	McAfee Labs Mobile Malware Research team
+T5	OperatingSystem 987 994	Android
+T6	AttackPattern_SmallDescription 1000 1057	botnet capabilities and a web-based control panel service
+T7	AttackPattern_SmallDescription 1074 1120	running on a legitimate cloud service provider
+T8	AttackPattern_SmallDescription 1127 1231	payload of this malware can encrypt a victim’s files, steal SMS messages, and block access to the device
+T9	AttackPattern_SmallDescription 1249 1297	the malware’s authors include a picture of a cat
+T10	AttackPattern_SmallDescription 1316 1475	constantly requests commands from the control server via HTTP, and the malicious server responds with the attackers’ instructions defined in the control panel.
+T11	Protocol 1373 1377	HTTP
+T12	AttackPattern_SmallDescription 1488 1529	traffic is transmitted without encryption
+T13	AttackPattern_SmallDescription 1656 1717	Read commands HTTP request to control server for new commands
+T14	Protocol 1670 1674	HTTP
+T15	CommandAndControl 1686 1700	control server
+T16	AttackPattern_SmallDescription 1722 1772	Send SMS message Send message from infected device
+T17	AttackPattern_SmallDescription 1777 1827	Remove all SMS Forward and delete all SMS messages
+T18	AttackPattern_SmallDescription 1832 1901	Encrypt SD files Encrypt all files on SD card and add extension . enc
+T19	AttackPattern_SmallDescription 1906 1993	Encrypt path in SD Encrypt all files on SD card in a specific path with extension . enc
+T20	AttackPattern_SmallDescription 1998 2077	Decrypt SD files Decrypt affected files on SD card that contain extension . enc
+T21	AttackPattern_SmallDescription 2082 2150	Decrypt path in SD files Decrypt files in a specific path on SD card
+T22	AttackPattern_SmallDescription 2155 2171	Lock Lock screen
+T23	AttackPattern_SmallDescription 2176 2206	Exit Kill application and exit
+T24	AttackPattern_SmallDescription 2311 2545	ability to encrypt specific files, steal SMS messages while forwarding them to the attacker and avoiding the victim’s message visualization, lock access to the device and the encryption using an AES algorithm with a hardcoded password
+T25	AttackPattern_SmallDescription 2644 2803	application code contains a method to decrypt the affected files; thus this ransomware app can be forced to decrypt files if one invokes the appropriate method
+T26	AttackPattern_SmallDescription 2843 2919	malicious server control panel for the botnet allows several remote commands
+T27	AttackPattern_SmallDescription 2922 2963	Lock/unlock the screen (with a cat image)
+T28	AttackPattern_SmallDescription 2966 2997	Send SMS messages to the victim
+T29	AttackPattern_SmallDescription 3000 3063	Encrypt/decrypt SD card memory files (with a hardcoded password
+T30	AttackPattern_SmallDescription 3067 3120	Silently steal SMS messages from the victim’s device.
+T31	Organization 3123 3134	McAfee Labs
+T32	AttackPattern_SmallDescription 3262 3450	looks like a demo version used to commercialize malware kits for cybercriminals because the control server interface is not protected and includes in the code words such as MyDificultPassw
+T33	AttackPattern_SmallDescription 3706 3724	social engineering
+T34	VirusScanner 3738 3760	McAfee Mobile Security
+T35	OperatingSystem 3774 3781	Android
+T36	Malware 3792 3813	Android/Ransom.ElGato
+T37	VirusScanner 3951 3973	McAfee Mobile Security
+R1	targets Arg1:T36 Arg2:T5	
+R2	uses Arg1:T36 Arg2:T6	
+R3	uses Arg1:T36 Arg2:T7	
+R4	uses Arg1:T36 Arg2:T8	
+R5	uses Arg1:T36 Arg2:T9	
+R6	uses Arg1:T36 Arg2:T10	
+R7	indicatedBy Arg1:T36 Arg2:T11	
+R8	uses Arg1:T36 Arg2:T12	
+R9	uses Arg1:T36 Arg2:T13	
+R10	indicatedBy Arg1:T36 Arg2:T14	
+R11	communicatesWith Arg1:T36 Arg2:T15	
+R12	uses Arg1:T36 Arg2:T16	
+R13	uses Arg1:T36 Arg2:T17	
+R14	uses Arg1:T36 Arg2:T18	
+R15	uses Arg1:T36 Arg2:T19	
+R16	uses Arg1:T36 Arg2:T20	
+R17	uses Arg1:T36 Arg2:T21	
+R18	uses Arg1:T36 Arg2:T22	
+R19	uses Arg1:T36 Arg2:T23	
+R20	uses Arg1:T36 Arg2:T24	
+R21	uses Arg1:T36 Arg2:T25	
+R22	uses Arg1:T36 Arg2:T26	
+R23	uses Arg1:T36 Arg2:T27	
+R24	uses Arg1:T36 Arg2:T28	
+R25	uses Arg1:T36 Arg2:T29	
+R26	uses Arg1:T36 Arg2:T30	
+R27	uses Arg1:T36 Arg2:T32	
+R28	uses Arg1:T36 Arg2:T33	
+R29	targets Arg1:T36 Arg2:T35	

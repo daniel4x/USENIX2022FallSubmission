@@ -1,0 +1,264 @@
+T1	Report 799 862	Android Banking Trojan ‘SpyLocker’ Targets More Banks in Europe
+T3	Person 883 898	Carlos Castillo
+T4	Time 902 914	May 26, 2016
+T5	Malware 967 976	SpyLocker
+T6	Organization 979 985	McAfee
+T7	Malware 1021 1030	SpyLocker
+T8	Application 1059 1077	Adobe Flash Player
+T9	Country 1113 1122	Australia
+T10	Country 1124 1135	New Zealand
+T11	Country 1141 1147	Turkey
+T12	Application 1316 1328	Flash Player
+T13	AttackPattern_SmallDescription 1357 1460	using hacked sites (including WordPress and Joomla) to distribute the malware posing as a “porn player”
+T14	Application 1387 1396	WordPress
+T15	Application 1401 1407	Joomla
+T16	Filename 1601 1614	pornvideo.apk
+T17	Malware 1722 1735	Police Locker
+T18	Time 1750 1754	2014
+T19	Malware 1777 1790	Police Locker
+T20	Malware 1795 1804	SpyLocker
+T21	Indicator 2386 2393	Autorun
+T22	Indicator 2395 2407	AdminService
+T23	Indicator 2413 2431	DeviceAdminChecker
+T24	Malware 2490 2499	SpyLocker
+T25	AttackPattern_SmallDescription 2500 2580	uses adult sites to lure users and trigger the automatic download of the malware
+T26	Filename 2631 2644	pornvideo.apk
+T27	AttackPattern_SmallDescription 2646 2701	when the app is installed it appears to be Flash Player
+T28	Application 2689 2701	Flash Player
+T29	AttackPattern_SmallDescription 2764 2906	As soon as the app is executed, the icon disappears from the home launcher and the malware constantly asks for device administrator privileges
+T30	AttackPattern_SmallDescription 2940 3138	If the user tries to deactivate the device administrator for the app, the malware locks the device, with the following screen preventing the user from clicking the deactivate button behind the cover
+T31	Malware 3142 3151	SpyLocker
+T32	Country 3181 3190	Australia
+T33	Country 3192 3203	New Zealand
+T34	Country 3209 3215	Turkey
+T35	AttackPattern_SmallDescription 3221 3372	it monitors the opening of banking and financial apps in additional European countries to display the phishing overlay and capture banking credentials.
+T36	Region 3289 3307	European countries
+T37	Country 3435 3441	Poland
+T38	Country 3453 3459	France
+T39	Malware 3500 3509	SpyLocker
+T40	AttackPattern_SmallDescription 3543 3559	phishing overlay
+T41	Country 3605 3619	United Kingdom
+T42	AttackPattern_SmallDescription 3623 3751	Instead of showing the phishing overlays from a remote server, recent SpyLocker variants have them implemented in the app itself
+T43	Malware 3693 3702	SpyLocker
+T44	Country 3902 3907	Italy
+T45	Country 4046 4053	Russian
+T46	Malware 4235 4244	SpyLocker
+T47	AttackPattern_SmallDescription 4250 4452	monitors the execution of Google and popular apps such as Instagram and eBay to display the Google phishing overlay, which now attempts to get more than just the email and password of the Google account
+T48	Browser 4276 4282	Google
+T49	Application 4308 4317	Instagram
+T50	Application 4322 4326	eBay
+T51	AttackPattern_SmallDescription 4652 4755	the overlay cannot be skipped—thus hijacking the device until the victim enters the correct information
+T52	Malware 4795 4804	SpyLocker
+T53	AttackPattern_SmallDescription 4858 4967	display an additional field to capture the second factor of authentication needed for electronic transactions
+T54	Malware 5013 5022	SpyLocker
+T55	AttackPattern_SmallDescription 5023 5073;5098 5193;5205 5482	constantly sends encrypted data to a remote server in the JavaScript Object Notation format, and reports the current status of the infected device includes device information, the default SMS app, if the malware has device administrator active, if it is currently locked, if any of the targeted banking apps are installed in the device, if intercepting incoming SMS messages is enabled (smsgrab), and if the device is rooted
+T56	Malware 5507 5516	SpyLocker
+T57	AttackPattern_SmallDescription 5521 5682	leak to a remote server the SMS messages in the inbox (inboxmessage), SMS being sent (sentmessage), the call history (callhistory), and installed apps (instapps)
+T58	Malware 5717 5726	SpyLocker
+T59	VirusScanner 6217 6239	McAfee Mobile Security
+T60	OperatingSystem 6253 6260	Android
+T61	Malware 6271 6288	Android/SpyLocker
+T62	VirusScanner 6400 6422	McAfee Mobile Security
+T63	Country 6512 6518	Turkey
+T64	Filename 6520 6538	com.akbank.softotp
+T65	Filename 6540 6584	com.akbank.android.apps.akbank_direkt_tablet
+T66	Filename 6586 6623	com.akbank.android.apps.akbank_direkt
+T67	Filename 6625 6632	com.teb
+T68	Filename 6634 6656	com.ziraat.ziraatmobil
+T69	Filename 6658 6679	com.tmobtech.halkbank
+T70	Filename 6681 6699	com.pozitron.iscep
+T71	Filename 6701 6722	com.garanti.cepsubesi
+T72	Filename 6724 6739	com.ykb.android
+T73	Filename 6741 6758	finansbank.enpara
+T74	Filename 6760 6789	com.finansbank.mobile.cepsube
+T75	Country 6791 6797	Poland
+T76	Filename 6799 6829	eu.eleader.mobilebanking.pekao
+T77	Filename 6831 6866	eu.eleader.mobilebanking.pekao.firm
+T78	Filename 6868 6898	hr.asseco.android.mtoken.pekao
+T79	Filename 6900 6935	eu.eleader.mobilebanking.raiffeisen
+T80	Filename 6937 6949	pl.pkobp.iko
+T81	Filename 6951 6959	pl.mbank
+T82	Filename 6961 6977	pl.ing.ingmobile
+T83	Filename 6979 6997	com.comarch.mobile
+T84	Filename 6999 7027	com.getingroup.mobilebanking
+T85	Filename 7029 7045	pl.bzwbk.bzwbk24
+T86	Filename 7047 7085	wit.android.bcpBankingApp.millenniumPL
+T87	Country 7087 7096	Australia
+T88	Filename 7098 7115	au.com.nab.mobile
+T89	Filename 7117 7137	com.commbank.netbank
+T90	Filename 7139 7162	com.cba.android.netbank
+T91	Filename 7164 7181	org.stgeorge.bank
+T92	Filename 7183 7210	org.banking.tablet.stgeorge
+T93	Filename 7212 7234	au.com.bankwest.mobile
+T94	Filename 7236 7258	com.bendigobank.mobile
+T95	Filename 7260 7276	org.westpac.bank
+T96	Filename 7278 7299	au.com.mebank.banking
+T97	Filename 7301 7324	com.anz.android.gomoney
+T98	Country 7326 7337	New Zealand
+T99	Filename 7339 7370	nz.co.anz.android.mobilebanking
+T100	Filename 7372 7391	nz.co.asb.asbmobile
+T101	Filename 7393 7415	nz.co.bnz.droidbanking
+T102	Filename 7417 7438	nz.co.kiwibank.mobile
+T103	Filename 7440 7453	nz.co.westpac
+T104	Country 7455 7461	France
+T105	Filename 7463 7488	net.bnpparibas.mescomptes
+T106	Filename 7490 7517	fr.lcl.android.customerarea
+T107	Filename 7519 7543	fr.laposte.lapostemobile
+T108	Filename 7545 7573	fr.creditagricole.androidapp
+T109	Filename 7575 7603	fr.banquepopulaire.cyberplus
+T110	Filename 7605 7620	com.cm_prod.bad
+T111	Filename 7622 7661	com.caisseepargne.android.mobilebanking
+T112	Country 7663 7669	Russia
+T113	Filename 7671 7688	ru.sberbankmobile
+T114	Filename 7690 7720	ru.vtb24.mobilebanking.android
+T115	Filename 7722 7748	ru.alfabank.mobile.android
+T116	Filename 7750 7776	com.idamob.tinkoff.android
+T117	Filename 7778 7803	ru.bpc.mobilebank.android
+T118	Filename 7805 7830	ru.bankuralsib.mb.android
+T119	Country 7832 7846	United Kingdom
+T120	Filename 7848 7890	com.barclays.android.barclaysmobilebanking
+T121	Filename 7892 7919	uk.co.santander.santanderUK
+T122	Filename 7921 7951	com.rbs.mobile.android.natwest
+T123	Application 7968 7987	com.android.vending
+T124	Application 7989 8013	com.google.android.music
+T125	Application 8015 8043	com.google.android.apps.plus
+T126	Application 8045 8063	com.android.chrome
+T127	Application 8065 8093	com.google.android.apps.maps
+T128	Application 8095 8121	com.google.android.youtube
+T129	Application 8123 8153	com.google.android.apps.photos
+T130	Application 8155 8184	com.google.android.apps.books
+T131	Application 8186 8214	com.google.android.apps.docs
+T132	Application 8216 8257	com.google.android.apps.docs.editors.docs
+T133	Application 8259 8284	com.google.android.videos
+T134	Application 8286 8307	com.google.android.gm
+T135	Application 8309 8321	com.whatsapp
+T136	Application 8323 8339	com.skype.raider
+T137	Application 8341 8370	com.google.android.play.games
+T138	Application 8372 8400	com.paypal.android.p2pmobile
+T139	Application 8402 8417	com.ebay.mobile
+T140	Application 8419 8440	com.instagram.android
+T141	Application 8442 8462	com.instagram.layout
+R1	has Arg1:T1 Arg2:T3	
+R2	has Arg1:T1 Arg2:T4	
+R3	uses Arg1:T7 Arg2:T8	
+R4	targets Arg1:T7 Arg2:T9	
+R5	targets Arg1:T7 Arg2:T10	
+R6	targets Arg1:T7 Arg2:T11	
+R7	uses Arg1:T7 Arg2:T12	
+R8	uses Arg1:T7 Arg2:T13	
+R9	uses Arg1:T7 Arg2:T14	
+R10	uses Arg1:T7 Arg2:T15	
+R11	indicatedBy Arg1:T7 Arg2:T16	
+R12	has Arg1:T17 Arg2:T18	
+R13	indicatedBy Arg1:T19 Arg2:T21	
+R14	indicatedBy Arg1:T19 Arg2:T22	
+R15	indicatedBy Arg1:T19 Arg2:T23	
+R16	indicatedBy Arg1:T20 Arg2:T21	
+R17	indicatedBy Arg1:T20 Arg2:T22	
+R18	indicatedBy Arg1:T20 Arg2:T23	
+R19	uses Arg1:T24 Arg2:T25	
+R20	indicatedBy Arg1:T24 Arg2:T26	
+R21	uses Arg1:T24 Arg2:T27	
+R22	uses Arg1:T24 Arg2:T28	
+R23	uses Arg1:T24 Arg2:T29	
+R24	uses Arg1:T24 Arg2:T30	
+R25	uses Arg1:T24 Arg2:T35	
+R26	targets Arg1:T31 Arg2:T32	
+R27	targets Arg1:T31 Arg2:T33	
+R28	targets Arg1:T31 Arg2:T34	
+R29	targets Arg1:T31 Arg2:T36	
+R30	targets Arg1:T31 Arg2:T37	
+R31	targets Arg1:T31 Arg2:T38	
+R32	uses Arg1:T39 Arg2:T40	
+R33	targets Arg1:T39 Arg2:T41	
+R34	uses Arg1:T43 Arg2:T42	
+R35	targets Arg1:T43 Arg2:T44	
+R36	targets Arg1:T43 Arg2:T45	
+R37	uses Arg1:T46 Arg2:T47	
+R38	uses Arg1:T46 Arg2:T49	
+R39	uses Arg1:T46 Arg2:T50	
+R40	uses Arg1:T46 Arg2:T51	
+R41	uses Arg1:T52 Arg2:T53	
+R42	uses Arg1:T54 Arg2:T55	
+R43	uses Arg1:T56 Arg2:T57	
+R44	targets Arg1:T61 Arg2:T63	
+R45	indicatedBy Arg1:T61 Arg2:T64	
+R46	indicatedBy Arg1:T61 Arg2:T65	
+R47	indicatedBy Arg1:T61 Arg2:T66	
+R48	indicatedBy Arg1:T61 Arg2:T67	
+R49	indicatedBy Arg1:T61 Arg2:T68	
+R50	indicatedBy Arg1:T61 Arg2:T69	
+R51	indicatedBy Arg1:T61 Arg2:T70	
+R52	indicatedBy Arg1:T61 Arg2:T71	
+R53	indicatedBy Arg1:T61 Arg2:T72	
+R54	indicatedBy Arg1:T61 Arg2:T73	
+R55	indicatedBy Arg1:T61 Arg2:T74	
+R56	targets Arg1:T61 Arg2:T75	
+R57	indicatedBy Arg1:T61 Arg2:T76	
+R58	indicatedBy Arg1:T61 Arg2:T77	
+R59	indicatedBy Arg1:T61 Arg2:T78	
+R60	indicatedBy Arg1:T61 Arg2:T79	
+R61	indicatedBy Arg1:T61 Arg2:T80	
+R62	indicatedBy Arg1:T61 Arg2:T81	
+R63	indicatedBy Arg1:T61 Arg2:T82	
+R64	indicatedBy Arg1:T61 Arg2:T83	
+R65	indicatedBy Arg1:T61 Arg2:T84	
+R66	indicatedBy Arg1:T61 Arg2:T85	
+R67	indicatedBy Arg1:T61 Arg2:T86	
+R68	targets Arg1:T61 Arg2:T87	
+R69	indicatedBy Arg1:T61 Arg2:T88	
+R70	indicatedBy Arg1:T61 Arg2:T89	
+R71	indicatedBy Arg1:T61 Arg2:T90	
+R72	indicatedBy Arg1:T61 Arg2:T91	
+R73	indicatedBy Arg1:T61 Arg2:T92	
+R74	indicatedBy Arg1:T61 Arg2:T93	
+R75	indicatedBy Arg1:T61 Arg2:T94	
+R76	indicatedBy Arg1:T61 Arg2:T95	
+R77	indicatedBy Arg1:T61 Arg2:T96	
+R78	indicatedBy Arg1:T61 Arg2:T97	
+R79	targets Arg1:T61 Arg2:T98	
+R80	indicatedBy Arg1:T61 Arg2:T99	
+R81	indicatedBy Arg1:T61 Arg2:T100	
+R82	indicatedBy Arg1:T61 Arg2:T101	
+R83	indicatedBy Arg1:T61 Arg2:T102	
+R84	indicatedBy Arg1:T61 Arg2:T103	
+R85	targets Arg1:T61 Arg2:T104	
+R86	indicatedBy Arg1:T61 Arg2:T105	
+R87	indicatedBy Arg1:T61 Arg2:T106	
+R88	indicatedBy Arg1:T61 Arg2:T107	
+R89	indicatedBy Arg1:T61 Arg2:T108	
+R90	indicatedBy Arg1:T61 Arg2:T109	
+R91	indicatedBy Arg1:T61 Arg2:T110	
+R92	indicatedBy Arg1:T61 Arg2:T111	
+R93	targets Arg1:T61 Arg2:T112	
+R94	indicatedBy Arg1:T61 Arg2:T113	
+R95	indicatedBy Arg1:T61 Arg2:T114	
+R96	indicatedBy Arg1:T61 Arg2:T115	
+R97	indicatedBy Arg1:T61 Arg2:T116	
+R98	indicatedBy Arg1:T61 Arg2:T117	
+R99	indicatedBy Arg1:T61 Arg2:T118	
+R100	targets Arg1:T61 Arg2:T119	
+R101	indicatedBy Arg1:T61 Arg2:T120	
+R102	indicatedBy Arg1:T61 Arg2:T121	
+R103	indicatedBy Arg1:T61 Arg2:T122	
+R104	targets Arg1:T61 Arg2:T123	
+R105	targets Arg1:T61 Arg2:T124	
+R106	targets Arg1:T61 Arg2:T125	
+R107	targets Arg1:T61 Arg2:T126	
+R108	targets Arg1:T61 Arg2:T127	
+R109	targets Arg1:T61 Arg2:T128	
+R110	targets Arg1:T61 Arg2:T129	
+R111	targets Arg1:T61 Arg2:T130	
+R112	targets Arg1:T61 Arg2:T131	
+R113	targets Arg1:T61 Arg2:T132	
+R114	targets Arg1:T61 Arg2:T133	
+R115	targets Arg1:T61 Arg2:T134	
+R116	targets Arg1:T61 Arg2:T135	
+R117	targets Arg1:T61 Arg2:T136	
+R118	targets Arg1:T61 Arg2:T137	
+R119	targets Arg1:T61 Arg2:T138	
+R120	targets Arg1:T61 Arg2:T139	
+R121	targets Arg1:T61 Arg2:T140	
+R122	targets Arg1:T61 Arg2:T141	
+*	hasAlias T58 T61
+R123	targets Arg1:T61 Arg2:T60	

@@ -1,0 +1,51 @@
+T1	Report 767 814	Banned Chinese Qvod Lives on in Malicious Fakes
+T2	Person 835 845	Wenfeng Yu
+T3	Time 849 861	May 02, 2017
+T4	Application 864 868	Qvod
+T5	Organization 864 868	Qvod
+T6	Country 920 925	China
+T7	Time 1012 1016	2014
+T8	Malware 1070 1101	malicious fake versions of Qvod
+T9	Application 1097 1101	Qvod
+T10	AttackPattern_SmallDescription 1153 1268	disguise their own icons to appear as the Qvod player or to use pornographic icons to attract users to install them
+T11	Application 1195 1199	Qvod
+T12	AttackPattern_SmallDescription 1333 1360	collecting user information
+T13	AttackPattern_SmallDescription 1362 1394	sending SMS that deduct payments
+T14	AttackPattern_SmallDescription 1396 1419	blocking legitimate SMS
+T15	AttackPattern_SmallDescription 1421 1439	pushing other apps
+T16	AttackPattern_SmallDescription 1472 1516	forcing users to activate the device manager
+T17	Application 1638 1661	“midnight Qvod player,”
+T18	Application 1662 1694	“16-year-old-girl night player,”
+T19	Application 1695 1719	“midnight video player,”
+T20	Application 1724 1747	“adult theater player.”
+T21	Application 1780 1784	Qvod
+T22	AttackPattern_LargeDescription 1792 1906;1907 2037;2038 2095;2096 2235;2236 2301;2355 2484;2486 2531	After the victim installs and runs one of these malicious apps, it forces the user to activate the device manager. If the user attempts to cancel, the app occupies the entire screen, effectively requiring the user to activate the device manager. If the victim does not comply, they cannot use the phone. If the user does activate the device manager, the malware will respond to any attempt to delete the app by forcing a return to the desktop. Thus victims cannot follow the normal steps to uninstall the app. Next the malware attempts to trick victims to pay while in the background collecting user information and upload it to the server It also downloads other apps and install them
+T23	AttackPattern_SmallDescription 1859 1905	forces the user to activate the device manager
+T24	AttackPattern_SmallDescription 1947 2037	occupies the entire screen, effectively requiring the user to activate the device manager.
+T25	AttackPattern_SmallDescription 2159 2234	respond to any attempt to delete the app by forcing a return to the desktop
+T26	AttackPattern_SmallDescription 2384 2484	trick victims to pay while in the background collecting user information and upload it to the server
+T27	AttackPattern_SmallDescription 2494 2531	downloads other apps and install them
+T28	Application 3168 3188	Android Debug Bridge
+T29	Application 3208 3211	ADB
+T30	Application 3485 3488	ADB
+T31	VirusScanner 3546 3568	McAfee Mobile Security
+T32	Malware 3592 3608	Android/KboVedio
+R1	has Arg1:T1 Arg2:T2	
+R2	has Arg1:T1 Arg2:T3	
+R3	uses Arg1:T8 Arg2:T10	
+R4	has Arg1:T22 Arg2:T23	
+R5	has Arg1:T22 Arg2:T24	
+R6	has Arg1:T22 Arg2:T25	
+R7	variantOf Arg1:T32 Arg2:T8	
+R8	uses Arg1:T32 Arg2:T12	
+R9	uses Arg1:T32 Arg2:T13	
+R10	uses Arg1:T32 Arg2:T14	
+R11	uses Arg1:T32 Arg2:T15	
+R12	uses Arg1:T32 Arg2:T16	
+R13	uses Arg1:T32 Arg2:T17	
+R14	uses Arg1:T32 Arg2:T18	
+R15	uses Arg1:T32 Arg2:T19	
+R16	uses Arg1:T32 Arg2:T20	
+R17	uses Arg1:T32 Arg2:T22	
+R18	uses Arg1:T32 Arg2:T26	
+R19	uses Arg1:T32 Arg2:T27	

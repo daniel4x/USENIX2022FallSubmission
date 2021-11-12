@@ -1,0 +1,113 @@
+T1	Report 829 907	Analysis of Chrysaor Keylogging Mechanism Shows Power of Simple Malicious Code
+T2	Organization 928 934	McAfee
+T3	Time 938 950	May 15, 2017
+T4	AttackPattern_SmallDescription 988 1006	social engineering
+T5	Organization 1638 1644	Google
+T6	Organization 1649 1656	Lookout
+T7	OperatingSystem 1689 1696	Android
+T8	Malware 1729 1736	Pegasus
+T9	Malware 1752 1760	Chrysaor
+T10	Malware 1801 1808	Pegasus
+T11	Time 1837 1846	last year
+T12	Malware 1879 1887	Chrysaor
+T13	Organization 1892 1898	Google
+T14	Malware 1903 1910	Pegasus
+T15	Organization 1915 1922	Lookout
+T16	Malware 1930 1938	Chrysaor
+T17	AttackPattern_SmallDescription 1956 1982	leaks data of popular apps
+T18	AttackPattern_SmallDescription 1987 2004	remotely controls
+T19	Organization 2021 2028	Lookout
+T20	Malware 2067 2075	Chrysaor
+T21	AttackPattern_SmallDescription 2127 2174	injects code and installs a hook for keylogging
+T22	Malware 2202 2210	Chrysaor
+T23	Hash 2318 2382	ade8bef0ac29fa363fc9afd958af0074478aef650adeb0318517b48bd996d5d5
+T24	Filename 2486 2493	addk.so
+T25	Filename 2498 2505	libk.so
+T26	Filepath 2557 2579	/data/local/tmp/inulmn
+T27	Filename 2573 2579	inulmn
+T28	Filepath 2598 2623	/data/local/tmp/libuml.so
+T29	Filename 2614 2623	libuml.so
+T30	AttackPattern_LargeDescription 2625 2898	The addk.so file injects shellcode into the memory space of the keyboard process (Step 1 in the preceding graphic). When the shellcode runs, it loads libk.so and calls the function init() (Step 2). This function installs a hook to capture user keystrokes to a file (Step 3)
+T31	Filename 2629 2636	addk.so
+T32	AttackPattern_SmallDescription 2642 2705	injects shellcode into the memory space of the keyboard process
+T33	Filename 2775 2782	libk.so
+T34	Filepath 3003 3014	/system/csk
+T35	Filename 3011 3014	csk
+T36	Filepath 3165 3190	/data/local/tmp/libuml.so
+T37	Filename 3181 3190	libuml.so
+T38	Filepath 3232 3254	/data/local/tmp/inulmn
+T39	Filename 3248 3254	inulmn
+T40	Filepath 3344 3366	/data/local/tmp/inulmn
+T41	Filename 3360 3366	inulmn
+T42	Filepath 3379 3404	/data/local/tmp/libuml.so
+T43	Filename 3395 3404	libuml.so
+T44	Filepath 3418 3440	/data/local/tmp/inulmn
+T45	Filename 3433 3440	/inulmn
+T46	Filepath 3454 3479	/data/local/tmp/libuml.so
+T47	Filename 3470 3479	libuml.so
+T48	Filepath 3482 3504	/data/local/tmp/inulmn
+T49	Filename 3498 3504	inulmn
+T50	Filepath 3531 3556	/data/local/tmp/libuml.so
+T51	Filename 3547 3556	libuml.so
+T52	Filepath 3581 3603	/data/local/tmp/inulmn
+T53	Filename 3597 3603	inulmn
+T54	Filepath 3709 3734	/data/local/tmp/libuml.so
+T55	Filename 3725 3734	libuml.so
+T56	Malware 3869 3877	Chrysaor
+T57	AttackPattern_SmallDescription 4111 4205	searches for the input method (keyboard) process in the list of running processes using the ID
+T58	AttackPattern_SmallDescription 4231 4292	extracts the ID of the process so that it can inject the code
+T59	Malware 4367 4375	Chrysaor
+T60	AttackPattern_SmallDescription 4430 4485	inject its code and hook the function to log keystrokes
+T61	Filename 4506 4513	addk.so
+T62	Filename 4623 4630	Addk.so
+T63	AttackPattern_SmallDescription 4776 4912	finds the function addresses of APIs such as dlsym(), dlopen(), and mmap() in the target process’ memory space using the proc filesystem
+T64	Filename 5627 5634	addk.so
+T65	Filename 5973 5980	Libk.so
+T66	Filename 6046 6053	Addk.so
+T67	AttackPattern_LargeDescription 6464 6580;6581 6703;6705 6814;6815 6918;6919 7091;7092 7244;7245 7326	The Init() function overwrites the first 8 bytes of transact() with an 8-byte hook code that jumps to the keylogger. The original 8 bytes are copied to a separate memory space that has stub code for jumping back to the transact() function. When the transact() function is called (Step 1), the installed keylogger executes first due to the hook code. The keylogger checks the function code to see whether it is 0x6 (setComposingText) or 0x8 (commitText). If true, the function calls android::Parcel::enforceInterface(“com.android.internal.view.IInputContext”) and reads the keystroke data from the parcel and logs it to a file. After the keylogging is complete (Step 2), the function executes the 8 bytes of instructions that were copied from the start of the transact() function. Finally the stub code runs (Step 3), which jumps back to transact() at offset +8.
+T68	Filename 7542 7573	/data/local/tmp/ktmu/ulmndd.tmp
+T69	Filename 7563 7573	ulmndd.tmp
+T70	Filepath 7623 7662	/data/local/tmp/ktmu/finidk.<timestamp>
+T71	Filename 7644 7662	finidk.<timestamp>
+T72	AttackPattern_SmallDescription 7749 7768	log user keystrokes
+T73	Indicator 8686 8713	quickly loses battery power
+T74	Indicator 8717 8764	generates an abnormal amount of network traffic
+R1	has Arg1:T1 Arg2:T3	
+R2	targets Arg1:T8 Arg2:T7	
+R3	targets Arg1:T9 Arg2:T7	
+R4	has Arg1:T10 Arg2:T11	
+R5	uses Arg1:T16 Arg2:T17	
+R6	uses Arg1:T16 Arg2:T18	
+R7	uses Arg1:T20 Arg2:T21	
+R8	indicatedBy Arg1:T22 Arg2:T23	
+R9	indicatedBy Arg1:T22 Arg2:T24	
+R10	indicatedBy Arg1:T22 Arg2:T24	
+R11	indicatedBy Arg1:T22 Arg2:T25	
+R12	indicatedBy Arg1:T22 Arg2:T25	
+R13	indicatedBy Arg1:T22 Arg2:T26	
+R14	indicatedBy Arg1:T22 Arg2:T27	
+R15	indicatedBy Arg1:T22 Arg2:T28	
+R16	indicatedBy Arg1:T22 Arg2:T29	
+R17	has Arg1:T22 Arg2:T30	
+R18	indicatedBy Arg1:T22 Arg2:T34	
+R19	indicatedBy Arg1:T22 Arg2:T35	
+R20	has Arg1:T30 Arg2:T32	
+R21	has Arg1:T31 Arg2:T32	
+R22	uses Arg1:T56 Arg2:T57	
+R23	uses Arg1:T56 Arg2:T58	
+R24	uses Arg1:T59 Arg2:T60	
+R25	indicatedBy Arg1:T59 Arg2:T61	
+R26	indicatedBy Arg1:T59 Arg2:T62	
+R27	uses Arg1:T59 Arg2:T63	
+R28	indicatedBy Arg1:T59 Arg2:T64	
+R29	indicatedBy Arg1:T59 Arg2:T65	
+R30	indicatedBy Arg1:T59 Arg2:T66	
+R31	uses Arg1:T59 Arg2:T67	
+R32	indicatedBy Arg1:T59 Arg2:T68	
+R33	indicatedBy Arg1:T59 Arg2:T69	
+R34	indicatedBy Arg1:T59 Arg2:T70	
+R35	indicatedBy Arg1:T59 Arg2:T71	
+R36	uses Arg1:T59 Arg2:T72	
+R37	indicatedBy Arg1:T59 Arg2:T73	
+R38	indicatedBy Arg1:T59 Arg2:T74	
+*	hasAlias T8 T9

@@ -1,0 +1,250 @@
+experiment with filtered cleaner corpus
+Entity ID       Entity Name     Confidence Score
+===Seeds===
+8024    eastern_european        1.0
+8482    europe  1.0
+5653    africa  1.0
+8476    asia    1.0
+4006    asia_/_pacific  1.0
+8907    asia_pacific    1.0
+6800    australia       1.0
+6159    usa     1.0
+8244    germany 1.0
+11779   ireland 1.0
+8435    china   1.0
+
+===Result===[label:reg_res1]
+11348   united_states   0.9593169078431067
+8610    indonesia       0.963389855870604
+271     management      0.5753419335335075
+8553    canada  0.9696600413056662
+8033    jr_east 0.9596768591443643
+673     blue    0.6652642544425641
+6281    japan   0.7679234761434685
+617     demon   0.9460585534750633
+4205    france  0.9061598173376243
+3929    diffie_hellman  0.6740597760182901
+5140    italy   0.8559270018835672
+8568    travis_barker   0.8614931313588988
+8963    officer 0.8089852729427663
+8536    trance  0.8575524271149957
+1084    configuration_tool      0.6793910480028926
+8609    confucius       0.8332942404276338
+4374    spain   0.8230830862626464
+2443    nonce   0.4957158712675301
+3231    india   0.7332720071727364
+759     economist       0.828166200458308
+5004    levent  0.7953162573521386
+9567    mcafee_endpoint_security        0.5648287728632012
+9162    switzerland     0.7480974742768149
+1896    epolicy_orchestrator    0.7863493977607301
+11785   alberta 0.7948791570999592
+
+experiment on label:reg_res1
+
+Entity ID       Entity Name     Confidence Score
+===Seeds===
+11348   united_states   1.0
+8610    indonesia       1.0
+271     management      1.0
+8553    canada  1.0
+8033    jr_east 1.0
+673     blue    1.0
+6281    japan   1.0
+617     demon   1.0
+4205    france  1.0
+3929    diffie_hellman  1.0
+5140    italy   1.0
+8568    travis_barker   1.0
+8963    officer 1.0
+8536    trance  1.0
+1084    configuration_tool      1.0
+8609    confucius       1.0
+4374    spain   1.0
+2443    nonce   1.0
+3231    india   1.0
+759     economist       1.0
+5004    levent  1.0
+9567    mcafee_endpoint_security        1.0
+9162    switzerland     1.0
+1896    epolicy_orchestrator    1.0
+11785   alberta 1.0
+
+===Result===[label:reg_res2]
+8244    germany 0.904374877373508
+801     gnome   0.509882317612717
+609     indigo  0.8971447239788539
+6800    australia       0.8808739820597846
+206     sensitive_information   0.5114809038289304
+6159    usa     0.8118823709815824
+4323    identity_manager        0.5491480141113263
+8241    snake   0.8535017918473214
+5416    information_management  0.5894507144314274
+8435    china   0.7348296236549083
+11779   ireland 0.7965685241496411
+8472    romagna 0.7964009409581979
+41      library 0.43129734862323166
+8158    brazil  0.7777962338495346
+517     engine  0.42503414812573
+8528    malaysia        0.7320943310212987
+1117    hard_code       0.41839433796280184
+4250    gout    0.7574406298634906
+8567    thailand        0.7428579427969119
+11525   anhui   0.7523366488999157
+3342    vietnam 0.7113318434308119
+15      ssl     0.360953265965189
+11374   ole     0.7351602092286763
+12064   korea   0.7264108470309856
+8524    yozgat  0.7304166536342894
+
+
+experiment when seed is reg_res2
+
+===Seeds===
+8244    germany 1.0
+801     gnome   1.0
+609     indigo  1.0
+6800    australia       1.0
+206     sensitive_information   1.0
+6159    usa     1.0
+4323    identity_manager        1.0
+8241    snake   1.0
+5416    information_management  1.0
+8435    china   1.0
+11779   ireland 1.0
+8472    romagna 1.0
+41      library 1.0
+8158    brazil  1.0
+517     engine  1.0
+8528    malaysia        1.0
+1117    hard_code       1.0
+4250    gout    1.0
+8567    thailand        1.0
+11525   anhui   1.0
+3342    vietnam 1.0
+15      ssl     1.0
+11374   ole     1.0
+12064   korea   1.0
+8524    yozgat  1.0
+
+===Result===[label:reg_res3]
+8610    indonesia       0.857196609278619
+617     demon   0.8568273902779455
+673     blue    0.6014902428858074
+8553    canada  0.8576912154056913
+2091    ximian  0.8120215452718726
+8422    ecuador 0.8223213885446393
+9567    mcafee_endpoint_security        0.6229946943608476
+6281    japan   0.6121842453073818
+11348   united_states   0.8294232712107615
+8963    officer 0.8091450484806177
+8568    travis_barker   0.7970505658243707
+1896    epolicy_orchestrator    0.7985137427974272
+3231    india   0.6804369570179323
+11785   alberta 0.7936400512260092
+1084    configuration_tool      0.6662146958148586
+8536    trance  0.7678093601270026
+8543    guatemala       0.7706653619204303
+2834    singapore       0.6849986156215044
+8609    confucius       0.7697782267974218
+5140    italy   0.7746546809666675
+8588    honduras        0.767879531967283
+4205    france  0.7289601833975834
+2443    nonce   0.4448645243356607
+8427    peru    0.7638052741751462
+4374    spain   0.7626966517124055
+
+experiment when seed is reg_res3
+Entity ID       Entity Name     Confidence Score
+===Seeds===
+8610    indonesia       1.0
+617     demon   1.0
+673     blue    1.0
+8553    canada  1.0
+2091    ximian  1.0
+8422    ecuador 1.0
+9567    mcafee_endpoint_security        1.0
+6281    japan   1.0
+11348   united_states   1.0
+8963    officer 1.0
+8568    travis_barker   1.0
+1896    epolicy_orchestrator    1.0
+3231    india   1.0
+11785   alberta 1.0
+1084    configuration_tool      1.0
+8536    trance  1.0
+8543    guatemala       1.0
+2834    singapore       1.0
+8609    confucius       1.0
+5140    italy   1.0
+8588    honduras        1.0
+4205    france  1.0
+2443    nonce   1.0
+8427    peru    1.0
+4374    spain   1.0
+
+===Result===[label:reg_res4]
+8625    brasil  0.9196810707423014
+8244    germany 0.9274781859256206
+8241    snake   0.9232517717900821
+6800    australia       0.9005705820860745
+801     gnome   0.5317592928438131
+206     sensitive_information   0.4968674796166824
+8435    china   0.7773597894711568
+5758    kure    0.9045328608397395
+348     mysql   0.5208374554022056
+6159    usa     0.8602937725746204
+8528    malaysia        0.830827318189117
+622     center  0.4830640024711359
+2475    seti@home       0.8447404268066494
+8472    romagna 0.8408029102598565
+3342    vietnam 0.8198996858292367
+8567    thailand        0.8121175772735365
+8524    yozgat  0.8151898031523381
+3097    simple_php_blog 0.6971982871709396
+12064   korea   0.809167485445719
+5158    gelato  0.746375846955768
+9162    switzerland     0.7460379424742467
+7258    cockpit 0.6809793067733023
+8429    kfai    0.8007546462662835
+10317   costa_rica      0.7980690056082314
+3496    scribe  0.7923361773003446
+_____________________________________________________
+=== Finish SetExpan ===
+Entity ID       Entity Name     Confidence Score
+8474    USA     1.0
+11942   China   1.0
+4168    India   1.0
+17854   Korea   1.0
+12037   JAPAN   1.0
+12068   Malaysia        1.0
+7725    Africa  1.0
+11997   Asia    1.0
+12005   Europe  1.0
+
+
+4       Linux   0.45541530132001423
+4458    ILO     0.9389204214130507
+1549    usr_/_lib       0.7868272337772687
+13916   Trusted_Platform_Module 0.9262461214311627
+4132    sl      0.8690264697232227
+7079    TPM     0.6773560379869584
+11252   disaster_recovery       0.8745369310166947
+7       email   0.4261267030777067
+16178   Fastball        0.872472748492589
+2114    api     0.4572983453310507
+502     BMC     0.4570048083154765
+1280    fax     0.5493445068223695
+3924    FLD     0.7520696888732555
+446     etc_/_shadow    0.49409677258397905
+2028    sms     0.4714072070587849
+43      test    0.3665600536716951
+11135   telephone_number        0.5770949567030298
+4239    postage 0.6541878545653744
+483     SQL     0.17472700062981408
+1644    computer        0.5520243959669097
+2777    IPv6    0.25016425033028955
+733     email_address   0.31166060471313933
+417     EFnet   0.5832831103054035
+2057    personal_digital_assistant      0.5813308626049628
+15416   social_security_number  0.5690347945564045

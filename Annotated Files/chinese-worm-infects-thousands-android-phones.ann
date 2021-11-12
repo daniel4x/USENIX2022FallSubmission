@@ -1,0 +1,16 @@
+T1	Report 2132 2180	Chinese Worm Infects Thousands of Android Phones
+T2	Organization 2201 2207	McAfee
+T3	Time 2211 2223	Aug 05, 2014
+T4	Country 2259 2264	China
+T5	URL 2472 2522	http://cdn.<removed>.com/down/4279139/XXshenqi.com
+T6	DomainName 2510 2522	XXshenqi.com
+T7	AttackPattern_SmallDescription 2799 2985	After installing, the malware sends a text message to a control server phone number, which we believe belongs to the author of this malware, to let him know that a new victim is infected
+T8	AttackPattern_SmallDescription 3006 3105	then asks the user to input his or her ID and name, which will also be posted to the control number
+T9	Country 3807 3812	China
+T10	VirusScanner 4134 4156	McAfee Mobile Security
+T11	Malware 4190 4207	Android/XShenqi.A
+R1	indicatedBy Arg1:T11 Arg2:T5	
+R2	indicatedBy Arg1:T11 Arg2:T6	
+R3	uses Arg1:T11 Arg2:T7	
+R4	uses Arg1:T11 Arg2:T8	
+R5	targets Arg1:T11 Arg2:T9	

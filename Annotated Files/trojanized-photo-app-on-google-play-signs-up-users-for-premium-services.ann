@@ -1,0 +1,53 @@
+T1	Report 815 886	Trojanized Photo App on Google Play Signs Up Users for Premium Services
+T2	Person 907 922	Carlos Castillo
+T3	Time 926 938	Jan 13, 2017
+T4	OperatingSystem 1110 1117	Android
+T5	Application 1218 1229	Google Play
+T6	Application 1253 1264	Google Play
+T7	Filename 1400 1413	com.star.trek
+T8	Application 1417 1428	Google Play
+T9	Application 1607 1618	Google Play
+T10	Application 1769 1784	“I Love Filter”
+T11	Application 1843 1859	“Wonderful Cam.”
+T12	Malware 2038 2048	SMS Trojan
+T13	AttackPattern_SmallDescription 2136 2229	sends SMS (text) messages to premium-rate numbers and charges the user for a specific service
+T14	AttackPattern_SmallDescription 2289 2346	user is subscribed to a service that continuously charges
+T15	AttackPattern_SmallDescription 2478 2508	demands permission to send SMS
+T16	AttackPattern_LargeDescription 2660 2798;2823 2981;3004 3060	As soon as the app is opened, it loads a website to subscribe the user to a premium service once the user clicks on the “Continue” button. rather than subscribing the user automatically in the background, the app explains the cost of each SMS and, more important, how the user can stop the service if the user does not pay, the application cannot be used
+T17	AttackPattern_SmallDescription 2693 2750	loads a website to subscribe the user to a premium servic
+T18	Application 3237 3253	“I Love Filter,”
+T19	Filename 3266 3279	com.star.trek
+T20	Application 3431 3442	Google Play
+T21	Application 3522 3533	Google Play
+T22	Application 3676 3691	Beautiful Photo
+T23	Application 3704 3717	I Love Filter
+T24	AttackPattern_SmallDescription 3881 3935	subscribe the user to an unwanted premium-rate service
+T25	AttackPattern_SmallDescription 4007 4114	leaks device and user information, including the phone number, GPS location, installed apps, and IP address
+T26	AttackPattern_SmallDescription 4138 4171	download and install applications
+T27	OperatingSystem 4192 4199	Android
+T28	OperatingSystem 4277 4288	Android 4.2
+T29	OperatingSystem 4471 4482	Android 4.4
+T30	Organization 4492 4498	Google
+T31	OperatingSystem 4899 4906	Android
+T32	Application 5073 5084	Google Play
+T33	Application 5388 5403	“I Love Filter”
+T34	Organization 5411 5417	Google
+T35	Application 5569 5580	Google Play
+T36	VirusScanner 5697 5719	McAfee Mobile Security
+T37	Malware 5743 5757	Android/SmsPay
+T38	VirusScanner 5869 5891	McAfee Mobile Security
+R1	has Arg1:T1 Arg2:T2	
+R2	has Arg1:T1 Arg2:T3	
+R3	uses Arg1:T12 Arg2:T13	
+R4	uses Arg1:T12 Arg2:T14	
+R5	has Arg1:T16 Arg2:T17	
+R6	indicatedBy Arg1:T37 Arg2:T7	
+R7	uses Arg1:T37 Arg2:T10	
+R8	uses Arg1:T37 Arg2:T11	
+R9	variantOf Arg1:T37 Arg2:T12	
+R10	uses Arg1:T37 Arg2:T15	
+R11	uses Arg1:T37 Arg2:T16	
+R12	uses Arg1:T37 Arg2:T18	
+R13	indicatedBy Arg1:T37 Arg2:T19	
+R14	uses Arg1:T37 Arg2:T23	
+R15	uses Arg1:T37 Arg2:T33	

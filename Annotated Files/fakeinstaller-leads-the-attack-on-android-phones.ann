@@ -1,0 +1,111 @@
+T1	Report 773 823	‘FakeInstaller’ Leads the Attack on Android Phones
+T2	Person 844 857	Fernando Ruiz
+T3	Time 861 873	Oct 04, 2012
+T4	MalwareFamily 876 897	Android.FakeInstaller
+T5	Application 956 981	Olympic Games Results App
+T6	Application 983 988	Skype
+T7	Application 990 1002	Flash Player
+T8	Application 1004 1009	Opera
+T9	MalwareFamily 1093 1106	FakeInstaller
+T10	OperatingSystem 1198 1205	Android
+T11	Organization 1227 1233	McAfee
+T12	MalwareFamily 1238 1251	FakeInstaller
+T13	MalwareFamily 1440 1461	Android.FakeInstaller
+T14	AttackPattern_SmallDescription 1462 1598	sends SMS messages to premium rate numbers, without the user’s consent, passing itself off as the installer for a legitimate application
+T15	MalwareFamily 1776 1797	Android.FakeInstaller
+T16	AttackPattern_SmallDescription 1878 1950	fake official site or fake market via search engines or social networks.
+T17	AttackPattern_SmallDescription 1964 2051	appear to be legitimate, including screenshots, descriptions, user reviews, videos, etc
+T18	MalwareFamily 2128 2149	Android.FakeInstaller
+T19	AttackPattern_SmallDescription 2166 2250	displays a service agreement that tells the user that one or more SMS’s will be sent
+T20	Country 2285 2292	Russian
+T21	Country 2296 2303	English
+T22	AttackPattern_SmallDescription 2350 2427	forced to click an Agree or Next button, which sends the premium SMS messages
+T23	AttackPattern_SmallDescription 2461 2512	send the messages before the victim clicks a button
+T24	MalwareFamily 2537 2558	Android.FakeInstaller
+T25	AttackPattern_SmallDescription 2566 2634	simulates the install or download screen of a legitimate application
+T26	MalwareFamily 2665 2678	FakeInstaller
+T27	AttackPattern_SmallDescription 2689 2726	displays a fake download-progress bar
+T28	AttackPattern_SmallDescription 2741 2802	dialog closes or redirects the browser to another fake market
+T29	MalwareFamily 2921 2934	FakeInstaller
+T30	AttackPattern_SmallDescription 3080 3152	associated with a set of servers, domains, and fake applications markets
+T31	MalwareFamily 3201 3214	FakeInstaller
+T32	AttackPattern_SmallDescription 3220 3360	server-side polymorphics, which means the server (according to its configuration) could provide different APK files for the same URL request
+T33	AttackPattern_SmallDescription 3425 3571	server redirects the browser to another server that process the request and sends a customized APK which has an associated ID in the generated URL
+T34	AttackPattern_SmallDescription 3577 3628	APK file is associated with the victim’s IP address
+T35	Application 3645 3666	Fake “Opera Mini 6.5”
+T36	AttackPattern_SmallDescription 3682 3787	download from one URL (http://[censored]loads.ru/tds?r=3967) but accessed from two IP addresses (A and B)
+T37	URL 3705 3742	http://[censored]loads.ru/tds?r=3967)
+T38	AttackPattern_SmallDescription 3806 3986	browser gets redirected to different URLs and downloads very similar APK files that contain a few differences in the file res/raw/config.txt, which is related to the redirected URL
+T39	Filename 3928 3946	res/raw/config.txt
+T40	Filename 4043 4061	res/raw/config.txt
+T41	AttackPattern_SmallDescription 4267 4343	include an image (of a Russian joke) to increase or change the APK file size
+T42	MalwareFamily 4392 4405	FakeInstaller
+T43	Country 4428 4444	Eastern European
+T44	AttackPattern_SmallDescription 4520 4609	adding instructions to get the Mobile Country Code and Mobile Network Code of the device.
+T45	MalwareFamily 4637 4658	Android/FakeInstaller
+T46	AttackPattern_SmallDescription 4659 4721	selects the premium-rate numbers and the text for SMS messages
+T47	AttackPattern_SmallDescription 4728 4898	first versions of SMS message numbers were inside the DEX file, but in recent versions they come inside an encrypted XML file inside the APK, which depends on the server.
+T48	MalwareFamily 4913 4926	FakeInstaller
+T49	AttackPattern_SmallDescription 4940 4977	send up to seven premium SMS messages
+T50	AttackPattern_SmallDescription 5125 5154	the DEX file changes for all.
+T51	Malware 5405 5419	FakeInstallers
+T52	AttackPattern_SmallDescription 5428 5596	different recompiled obfuscated versions of the same source code, changed source filenames, line numbers, field names, method names, argument names, variable names, etc
+T53	Software 5744 5752	ProGuard
+T54	Software 5756 5764	DexGuard
+T55	Malware 5936 5959	Android.FakeInstaller.S
+T56	AttackPattern_SmallDescription 5966 6076	include antireversing techniques to avoid dynamic analysis and prevent the malware from running in an emulator
+T57	MalwareFamily 6119 6140	Android.FakeInstaller
+T58	AttackPattern_SmallDescription 6146 6266	not only send SMS messages to premium rate numbers, but also include a backdoor to receive commands from a remote server
+T59	Malware 6268 6283	FakeInstaller.S
+T60	OperatingSystem 6290 6323	Android Cloud to Device Messaging
+T61	AttackPattern_SmallDescription 6328 6438	register the infected devices in a database and send them messages (URLs) from malware authors Google accounts
+T62	Organization 6423 6429	Google
+T63	AttackPattern_SmallDescription 6591 6659	redirect the victim’s downloads to a set of IP addresses and domains
+T64	AttackPattern_SmallDescription 6717 6873	look fairly convincing and grab new victims easily because they are indexed in search engines like Yandex, which has a great position in the results ranking
+T65	Browser 6816 6822	Yandex
+T66	AttackPattern_SmallDescription 6940 7056	redirect the application’s download link from malicious to clean APK files, but after a while they restore the links
+T67	AttackPattern_SmallDescription 7082 7163	fake-sites URLs are shared via Twitter by bot accounts and fake Facebook profiles
+T68	Organization 7113 7120	Twitter
+T69	Organization 7146 7154	Facebook
+R1	uses Arg1:T4 Arg2:T5	
+R2	uses Arg1:T4 Arg2:T6	
+R3	uses Arg1:T4 Arg2:T7	
+R4	uses Arg1:T4 Arg2:T8	
+R5	targets Arg1:T9 Arg2:T10	
+R6	uses Arg1:T13 Arg2:T14	
+R7	uses Arg1:T15 Arg2:T16	
+R8	uses Arg1:T15 Arg2:T17	
+R9	uses Arg1:T18 Arg2:T19	
+R10	uses Arg1:T18 Arg2:T22	
+R11	uses Arg1:T18 Arg2:T23	
+R12	uses Arg1:T24 Arg2:T25	
+R13	uses Arg1:T26 Arg2:T27	
+R14	uses Arg1:T29 Arg2:T30	
+R15	uses Arg1:T31 Arg2:T32	
+R16	uses Arg1:T31 Arg2:T33	
+R17	uses Arg1:T31 Arg2:T34	
+R18	uses Arg1:T31 Arg2:T35	
+R19	uses Arg1:T31 Arg2:T36	
+R20	indicatedBy Arg1:T31 Arg2:T37	
+R21	uses Arg1:T31 Arg2:T38	
+R22	indicatedBy Arg1:T31 Arg2:T39	
+R23	indicatedBy Arg1:T31 Arg2:T40	
+R24	uses Arg1:T42 Arg2:T41	
+R25	targets Arg1:T42 Arg2:T43	
+R26	uses Arg1:T42 Arg2:T44	
+R27	uses Arg1:T45 Arg2:T46	
+R28	uses Arg1:T45 Arg2:T47	
+R29	uses Arg1:T48 Arg2:T49	
+R30	uses Arg1:T48 Arg2:T50	
+R31	uses Arg1:T51 Arg2:T52	
+R32	uses Arg1:T55 Arg2:T56	
+R33	uses Arg1:T57 Arg2:T58	
+R34	variantOf Arg1:T59 Arg2:T57	
+R35	targets Arg1:T59 Arg2:T60	
+R36	uses Arg1:T59 Arg2:T61	
+R37	uses Arg1:T59 Arg2:T63	
+R38	uses Arg1:T59 Arg2:T64	
+R39	uses Arg1:T59 Arg2:T66	
+R40	uses Arg1:T59 Arg2:T67	
+*	hasAlias T4 T9
+*	hasAlias T55 T59

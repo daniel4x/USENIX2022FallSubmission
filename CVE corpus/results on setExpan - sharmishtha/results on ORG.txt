@@ -1,0 +1,83 @@
+experiment on denoised corpus
+Entity ID       Entity Name     Confidence Score
+===Seeds===
+242     microsoft       1.0
+347     oracle  1.0
+11052   salesforce      1.0
+91      adobe   1.0
+6734    intuit  1.0
+2638    dell    1.0
+172     hp      1.0
+808     hewlett_packard 1.0
+2964    paypal  1.0
+9049    western_digital 1.0
+10106   ncr     1.0
+
+===Result===
+396     ibm     0.5350546441353043
+5096    common  0.6333368590884707
+9566    intel_security_mcafee   0.7391081413106793
+1204    s_/_mime        0.36551818894259464
+164     cisco   0.4927309375783142
+11892   parasoft        0.6154159315265852
+1288    specially_format        0.4142960078325063
+1794    nullsoft        0.5387385540812977
+1111    tumbleweed      0.5471093974962747
+8982    b&r     0.4464650693887248
+6521    splunk  0.37119931809295015
+7463    openshift       0.2794791448076295
+8063    morpho  0.5424292413059608
+2677    sophos  0.36423146898141534
+4927    gamehouse       0.5425174034286098
+3597    mcafee_virusscan        0.3757384343895665
+2204    sony    0.25324293698271255
+1311    sedum   0.4745142115745206
+1119    novell_netware  0.35448361113217636
+7515    general_electric        0.39504797780841266
+3022    smartertools_smartermail        0.4317200208461563
+167     netscape        0.25505149239838043
+799     intel   0.20317328112461447
+2651    microsoft_sharepoint    0.13611249733438185
+8425    coca_cola       0.35091612519037974
+
+
+
+__________________________________________________________
+
+=== Finish SetExpan ===
+Entity ID       Entity Name     Confidence Score
+6210    MICROSOFT       1.0
+4718    Google  1.0
+8113    Twitter 1.0
+7335    Facebook        1.0
+1011    Yahoo   1.0
+9400    APPLE   1.0
+4903    Appalachian_State_University    1.0
+3327    Dell    1.0
+
+
+4723    Joomla  0.5439506005528933
+16308   WP_live_chat_support    0.7490117749875139
+2047    Mozilla 0.4636629761003181
+17552   Active_directory        0.7554299752415083
+187     Windows 0.40969336697327297
+1806    Cryptographic   0.3373974597828923
+13520   Virtual_Environments    0.6028557851272937
+1406    XP      0.2634255757250077
+1009    AltaVista       0.61008642953386
+1216    Veritas 0.3633219047482146
+4101    veritas 0.4903502443208109
+5476    Action  0.2429836343006555
+4677    IBM_Tivoli      0.24724069286494615
+17533   Palo_Alto       0.4917584025765679
+1388    Unixware        0.48826979837060336
+536     PostgreSQL      0.2395309753951811
+4957    IDV     0.41770610558732424
+323     nmap    0.1725153120990505
+143     Ultrix  0.4270584445995812
+4617    Delphi  0.4267351142985368
+3601    nessus  0.36707886861965633
+15908   Enterprise_Resource_Planning    0.3675704169241563
+5834    Brightstor_ARCserve     0.38124319295268955
+6668    Vim     0.2884843226262193
+13455   c_/_C++ 0.3744363958764948
